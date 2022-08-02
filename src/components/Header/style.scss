@@ -1,0 +1,43 @@
+@use "../../scss" as *;
+
+div.header-container {
+   @include flex(space-between, center);
+   padding: 32px;
+   font-weight: 500;
+   font-size: 18px;
+   color: $txt-color;
+   // 
+   background-color: aquamarine;
+
+   .logo {
+      transition: 0.3s;
+
+      &:hover {
+         transform: translateY(-4px);
+      }
+   }
+
+
+   .nav-item {
+      width: 350px;
+      @include flex(space-between, unset);
+   }
+
+   a:not(.logo a) {
+      transition: 0.4s opacity;
+
+      &:hover {
+         opacity: 0.7;
+      }
+   }
+
+   .email {
+      @include flex(center, center);
+
+      img {
+         margin-right: 12px;
+      }
+   }
+
+
+}

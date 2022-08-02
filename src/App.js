@@ -1,5 +1,5 @@
 import { BrowserRouter } from 'react-router-dom';
-import Navbar from "./components/Navbar"
+import Header from "./components/Header"
 import './App.scss';
 import RoutesPage from './config/ReactRoutes';
 
@@ -7,7 +7,7 @@ function App() {
    return (
       <BrowserRouter>
          <>
-            <Navbar />
+            <Header />
             <RoutesPage />
          </>
       </BrowserRouter>
