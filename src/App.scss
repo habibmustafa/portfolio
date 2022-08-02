@@ -1,5 +1,11 @@
 @use "./scss/" as *;
 
+// bir muddet
+@font-face {
+   font-family: satoshi;
+   src: url(Satoshi-Variable.ttf);
+}
+
 * {
    padding: 0;
    margin: 0;
@@ -9,7 +15,7 @@
 
 body {
    background-color: $body-bg;
-   font-family: sans-serif;
+   font-family: satoshi;
 }
 
 .container {
