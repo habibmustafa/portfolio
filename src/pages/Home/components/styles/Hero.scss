@@ -1,0 +1,55 @@
+@use "../../../../scss/" as *;
+
+.hero-wrapper {
+   padding: 69px 0 100px;
+
+      @include flex(space-between, center);
+
+      .hero-content {
+         max-width: 610px;
+
+         .subtitle {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.33;
+            color: #4E4B66;
+            margin-bottom: 20px;
+         }
+
+         .hero-title {
+            font-size: 68px;
+            font-weight: 700;
+            line-height: 1.35;
+         }
+
+         .line {
+            position: relative;
+            top: -16px;
+            z-index: -10;
+         }
+
+         .get-button {
+            margin-top: 30px;
+
+            a {
+               display: inline-block;
+               padding: 28px 60px;
+               background-color: $dark-color;
+               color: #fff;
+               font-weight: 700;
+               font-size: 18px;
+               border-radius: 80px;
+               text-align: center;
+               transition: 0.4s;
+
+               &:hover {
+                  transform: translateY(-5px);
+                  background-color: #fff;
+                  color: #000;
+                  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+               }
+            }
+         }
+      }
+
+}
