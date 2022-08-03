@@ -12,7 +12,7 @@ const Home = () => {
             {/* Hero section */}
             <div className='hero'>
                <div className="hero-content"
-                  data-aos="fade-zoom-in" 
+                  data-aos="fade-zoom-in"
                   data-aos-delay="100"
                >
                   <h3 className='subtitle'>Hey, I’m Habib Mustafa</h3>
@@ -80,6 +80,21 @@ const Home = () => {
                   data-aos="fade-zoom-in"
                >
                   <Button to="/contact" title="Get in touch" />
+               </div>
+            </div>
+
+            {/* About section */}
+            <div className="about-me">
+               <div className="about-image" data-aos="fade-zoom-in">
+                  <img src="https://assets.website-files.com/61129bb2ecedf803564c68ec/6112b5031b9bac7e65bfa8d1_home-about-personal-x-template.jpg" alt="about" />
+               </div>
+
+               <div className="about-content"  data-aos="fade-zoom-in" data-aos-delay="300">
+                  <h2>About me</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus mattis nunc aliquam tincidunt est non. Viverra nec eu, in ridiculus egestas mi. Vulputate tristique porttitor enim aliquam ullamcorper. Velit dui laoreet in et mus.</p>
+                  <div className='get-button' data-aos="fade-zoom-in">
+                     <Button to="/about" title="More about me" />
+                  </div>
                </div>
             </div>
 
