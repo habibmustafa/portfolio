@@ -1,1 +1,117 @@
 @use "../../scss/" as *;
+
+// Hero Start
+.hero {
+   padding: 69px 0 100px;
+   @include flex(space-between, center);
+
+   .hero-content {
+      max-width: 610px;
+
+      .subtitle {
+         font-size: 24px;
+         font-weight: 700;
+         line-height: 1.33;
+         color: #4E4B66;
+         margin-bottom: 20px;
+      }
+
+      .hero-title {
+         font-size: 68px;
+         font-weight: 700;
+         line-height: 1.35;
+      }
+
+      .line {
+         position: relative;
+         top: -16px;
+         z-index: -10;
+      }
+
+      .get-button {
+         margin-top: 30px;
+      }
+   }
+}
+
+// Hero end
+
+// Services start
+.services {
+   padding: 100px 0;
+   font-weight: 500;
+   line-height: 1.777em;
+   font-size: 18px;
+
+   .content {
+      margin: 0 auto;
+      max-width: 500px;
+      text-align: center;
+      margin-bottom: 30px;
+
+      h2 {
+         font-size: 42px;
+         font-weight: 700;
+         line-height: 1.38em;
+         margin-bottom: 16px;
+         color: $dark-color;
+      }
+
+      p {
+         color: $gray-color;
+         text-align: center;
+      }
+   }
+
+   .items {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 48px;
+      grid-row-gap: 40px;
+      position: relative;
+      padding: 40px 0;
+      margin-bottom: 35px;
+
+      &::before {
+         content: '';
+         position: absolute;
+         background-color: #F6F7FF;
+         height: 100%;
+         width: 900px;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         z-index: -9;
+         border-radius: 30px;
+      }
+
+      .item {
+         padding: 48px 48px 48px 40px;
+         @include flex(center, flex-start);
+         border-radius: 20px;
+         background-color: $body-bg;
+
+         img {
+            margin-right: 28px;
+            border-radius: 20px;
+         }
+
+         h3 {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.333em;
+            margin-bottom: 12px;
+         }
+
+         p {
+            color: $gray-color;
+         }
+      }
+   }
+
+   .get-button {
+      text-align: center;
+   }
+}
+
+// Services end
