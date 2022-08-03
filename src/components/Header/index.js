@@ -4,7 +4,7 @@ import "./style.scss"
 
 const Header = () => {
    return (
-      <div className='container header-container'>
+      <div className='container header-container' data-aos="fade-zoom-in">
          <div className="logo">
             <NavLink to="/">
                <img src="https://assets.website-files.com/61129bb2ecedf803564c68ec/612a715b08e8df7a8419c063_logo-you-x-webflow-template.svg" alt="logo" />

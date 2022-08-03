@@ -1,16 +1,20 @@
 import React from 'react'
+import "./style.scss"
 import Button from '../../components/Button'
 import ServicesItems from './components/ServicesItems'
-import "./style.scss"
 
 const Home = () => {
+
    return (
       <div className='home-page'>
          <div className='container'>
 
             {/* Hero section */}
             <div className='hero'>
-               <div className="hero-content">
+               <div className="hero-content"
+                  data-aos="fade-zoom-in" 
+                  data-aos-delay="100"
+               >
                   <h3 className='subtitle'>Hey, I’m Habib Mustafa</h3>
                   <h1 className='hero-title'>I enjoy designing tech websites and digital products</h1>
                   <div className='line'>
@@ -18,21 +22,25 @@ const Home = () => {
                   </div>
 
                   {/* button component */}
-                  <div className='get-button'>
+                  <div className='get-button' data-aos="fade-zoom-in">
                      <Button to="/contact" title="Get in touch" />
                   </div>
                </div>
 
                {/* image section */}
-               <div className="hero-image">
+               <div className="hero-image"
+                  data-aos="fade-zoom-in"
+                  data-aos-delay="300"
+               >
                   <img src="https://assets.website-files.com/61129bb2ecedf803564c68ec/6112af58d6338c4181aaed8c_hero-image-personal-x-template.png" alt="me" />
                </div>
             </div>
 
-
             {/* Services section */}
             <div className='services'>
-               <div className='content'>
+               <div className='content'
+                  data-aos="fade-zoom-in"
+               >
                   <h2>My services</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus mattis nunc aliquam tincidunt est non. Viverra nec eu.</p>
                </div>
@@ -41,21 +49,25 @@ const Home = () => {
 
                   {/* item components */}
                   <ServicesItems
+                     delay="0"
                      src="https://assets.website-files.com/61129bb2ecedf803564c68ec/6112ae8b813c8f4ed9b43594_service-1-personal-x-template.svg"
                      title="Web Design"
                      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis viverra mollis nisl dole dolorili tincidunt. Integer eget vitae id tortor."
                   />
                   <ServicesItems
+                     delay="150"
                      src="https://assets.website-files.com/61129bb2ecedf803564c68ec/6112ae8b8dd274078a715c01_service-2-personal-x-template.svg"
                      title="UI / UX Design"
                      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis viverra mollis nisl dole dolorili tincidunt. Integer eget vitae id tortor."
                   />
                   <ServicesItems
+                     delay="0"
                      src="https://assets.website-files.com/61129bb2ecedf803564c68ec/6112ae8b908a1cfb9816fd8c_service-3-personal-x-template.svg"
                      title="Product Design"
                      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis viverra mollis nisl dole dolorili tincidunt. Integer eget vitae id tortor."
                   />
                   <ServicesItems
+                     delay="150"
                      src="https://assets.website-files.com/61129bb2ecedf803564c68ec/6112ae8b7c74be889e7f3156_service-4-personal-x-template.svg"
                      title="Web Development"
                      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis viverra mollis nisl dole dolorili tincidunt. Integer eget vitae id tortor."
@@ -64,13 +76,15 @@ const Home = () => {
                </div>
 
                {/* button component */}
-               <div className='get-button'>
+               <div className='get-button'
+                  data-aos="fade-zoom-in"
+               >
                   <Button to="/contact" title="Get in touch" />
                </div>
             </div>
 
-         </div>
-      </div>
+         </div >
+      </div >
    )
 }
 
