@@ -1,5 +1,6 @@
 import React from 'react'
 import Hero from './components/Hero'
+import Services from './components/Services'
 import "./style.scss"
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
          <div className='container'>
             {/* hero section */}
             <Hero />
+            <Services />
             
          </div>
       </div>

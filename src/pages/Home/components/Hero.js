@@ -4,7 +4,7 @@ import "./styles/Hero.scss"
 
 const Hero = () => {
    return (
-      <div className='hero-wrapper'>
+      <div className='hero'>
          <div className="hero-content">
             <h3 className='subtitle'>Hey, I’m Habib Mustafa</h3>
             <h1 className='hero-title'>I enjoy designing tech websites and digital products</h1>
