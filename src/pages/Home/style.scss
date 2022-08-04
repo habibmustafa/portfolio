@@ -8,10 +8,7 @@
    .hero-content {
       max-width: 610px;
 
-      .subtitle {
-         font-size: 24px;
-         font-weight: 700;
-         line-height: 1.33;
+      h3 {
          color: #4E4B66;
          margin-bottom: 20px;
       }
@@ -50,15 +47,10 @@
       margin-bottom: 30px;
 
       h2 {
-         font-size: 42px;
-         font-weight: 700;
-         line-height: 1.38em;
          margin-bottom: 16px;
-         color: $dark-color;
       }
 
       p {
-         color: $gray-color;
          text-align: center;
       }
    }
@@ -74,29 +66,6 @@
 
       // background before
       @include before(900px);
-
-      .item {
-         padding: 48px 48px 48px 40px;
-         @include flex(center, flex-start);
-         border-radius: 20px;
-         background-color: $body-bg;
-
-         img {
-            margin-right: 28px;
-            border-radius: 20px;
-         }
-
-         h3 {
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 1.333em;
-            margin-bottom: 12px;
-         }
-
-         p {
-            color: $gray-color;
-         }
-      }
    }
 
    .get-button {
@@ -125,18 +94,34 @@
       margin-left: 80px;
 
       h2 {
-         font-size: 42px;
-         line-height: 1.38em;
-         font-weight: 700;
          margin-bottom: 24px;
       }
 
       p {
-         font-size: 18px;
-         line-height: 1.777em;
-         font-weight: 500;
          margin-bottom: 56px;
-         color: $gray-color;
+      }
+   }
+}
+
+// About-me end
+
+// Take-portfolio start
+.take-portfolio {
+   padding: 100px 0;
+
+   .header {
+      @include flex(space-between,center);
+      margin-bottom: 80px;
+
+      .header-content {
+         max-width: 450px;
+         position: relative;
+
+         img {
+            position: absolute;
+            bottom: -20px;
+            z-index: -9;
+         }
       }
    }
 }

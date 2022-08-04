@@ -24,6 +24,27 @@ body {
    padding: 0 25px;
 }
 
+.title {
+   color: $dark-color;
+   font-size: 42px;
+   line-height: 1.38em;
+   font-weight: 700;
+}
+
+.subtitle {
+   color: $dark-color;
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 1.333em;
+}
+
+.paragraph {
+   color: $gray-color;
+   font-size: 18px;
+   line-height: 1.777em;
+   font-weight: 500;
+}
+
 a {
    text-decoration: none;
    color: unset;

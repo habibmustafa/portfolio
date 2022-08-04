@@ -1,7 +1,7 @@
 import React from 'react'
-import "./styles/Services.scss"
+import "./styles/ServicesItem.scss"
 
-const ServicesItems = ({ delay, src, title, content }) => {
+const ServicesItem = ({ delay, src, title, content }) => {
    return (
       <div className="item"
          data-aos="fade-zoom-in"
@@ -9,11 +9,11 @@ const ServicesItems = ({ delay, src, title, content }) => {
       >
          <img src={src} alt="i" />
          <div className="item-content">
-            <h3>{title}</h3>
-            <p>{content}</p>
+            <h3 className='subtitle'>{title}</h3>
+            <p className='paragraph'>{content}</p>
          </div>
       </div>
    )
 }
 
-export default ServicesItems
+export default ServicesItem
