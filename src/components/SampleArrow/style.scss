@@ -1,0 +1,40 @@
+@use "../../scss/" as *;
+
+.next-arrow,
+.prev-arrow {
+   @include flex(center, center);
+   position: absolute;
+   z-index: 100;
+   top: -180px;
+   background-color: #EFF0F6;
+   min-height: 80px;
+   min-width: 80px;
+   border-radius: 50%;
+   transform: translateX(-50%);
+   cursor: pointer;
+   transition: 0.4s;
+
+   &:hover {
+      background-color: $dark-color;
+      color: #fff;
+   }
+
+   
+
+   .icon {
+      position: relative;
+      font-size: 27px;
+   }
+}
+
+.next-arrow {
+   right: 0;
+}
+
+.prev-arrow {
+   right: 106px;
+
+   .icon {
+      left: 6px;
+   }
+}

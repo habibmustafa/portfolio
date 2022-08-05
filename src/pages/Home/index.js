@@ -1,10 +1,34 @@
 import React from 'react'
 import "./style.scss"
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Button from '../../components/Button'
 import ServicesItem from './components/ServicesItem'
 import PortfolioItem from './components/PortfolioItem'
+import { SampleNextArrow, SamplePrevArrow } from '../../components/SampleArrow';
 
 const Home = () => {
+
+   let settings = {
+      infinite: true,
+      speed: 600,
+      slidesToShow: 2.5,
+      slidesToScroll: 1,
+      initialSlide: -0.5,
+      nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />,
+      // responsive: [
+      //    {
+      //       breakpoint: 1024,
+      //       settings: {
+      //          slidesToShow: 1,
+      //          slidesToScroll: 1,
+      //          infinite: true,
+      //       }
+      //    }
+      // ]
+   };
 
    return (
       <div className='home-page'>
@@ -60,13 +84,13 @@ const Home = () => {
                      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis viverra mollis nisl dole dolorili tincidunt. Integer eget vitae id tortor."
                   />
                   <ServicesItem
-                     delay="0"
+                     delay="50"
                      src="https://assets.website-files.com/61129bb2ecedf803564c68ec/6112ae8b908a1cfb9816fd8c_service-3-personal-x-template.svg"
                      title="React JS Development"
                      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis viverra mollis nisl dole dolorili tincidunt. Integer eget vitae id tortor."
                   />
                   <ServicesItem
-                     delay="150"
+                     delay="200"
                      src="https://assets.website-files.com/61129bb2ecedf803564c68ec/6112ae8b7c74be889e7f3156_service-4-personal-x-template.svg"
                      title="Node.js Development (basic)"
                      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis viverra mollis nisl dole dolorili tincidunt. Integer eget vitae id tortor."
@@ -82,7 +106,7 @@ const Home = () => {
 
             {/* About-me section */}
             <div className="about-me">
-               <div className="about-image" data-aos="fade-zoom-in">
+               <div className="about-image" data-aos="fade-zoom-in" data-aos-delay="100">
                   <img src="https://assets.website-files.com/61129bb2ecedf803564c68ec/6112b5031b9bac7e65bfa8d1_home-about-personal-x-template.jpg" alt="about" />
                </div>
 
@@ -111,15 +135,20 @@ const Home = () => {
 
             <div className="take-portfolio">
                <div className="header">
-                  <div className='header-content'>
+                  <div className='header-content' data-aos="fade-zoom-in">
                      <h2 className='title'>Take a look at my design portfolio</h2>
                      <img src="https://assets.website-files.com/61129bb2ecedf803564c68ec/6112bdfb2b341387dfa368b4_portfolio-underline-personal-x-template.svg" alt="line" />
                   </div>
-                  <Button to="/about" title="More about me" />
                </div>
 
-               <div className="portfolio-items">
-                  <PortfolioItem />
+               <div className="portfolio-items" data-aos="fade-zoom-in" data-aos-delay="100">
+                  <Slider {...settings}>
+                     <PortfolioItem />
+                     <PortfolioItem />
+                     <PortfolioItem />
+                     <PortfolioItem />
+                     <PortfolioItem />
+                  </Slider>
                </div>
             </div>
 
