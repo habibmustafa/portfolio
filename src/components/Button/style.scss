@@ -3,8 +3,8 @@
 .get {
    display: inline-block;
    padding: 28px 60px;
-   background-color: $dark-color;
-   color: #fff;
+   background-color: $neutral-800;
+   color: $neutral-100;
    font-weight: 700;
    font-size: 18px;
    border-radius: 80px;
@@ -13,8 +13,8 @@
 
    &:hover {
       transform: translateY(-5px);
-      background-color: #fff;
-      color: #000;
+      background-color: $neutral-100;
+      color: $neutral-800;
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
    }
 }

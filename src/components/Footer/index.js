@@ -36,7 +36,7 @@ const Footer = () => {
                {/* Nav wrapper */}
                <div className="footer-nav-wrapper">
                   <div className="pages">
-                     <h4>Pages</h4>
+                     <h4 className='h4-size'>Pages</h4>
                      <ul>
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/about">About</Link></li>
@@ -47,7 +47,7 @@ const Footer = () => {
                   </div>
 
                   <div className="utility-pages">
-                     <h4>Utility Pages</h4>
+                     <h4 className='h4-size'>Utility Pages</h4>
                      <ul>
                         <li><Link to="/404">404 Not Found</Link></li>
                         <li><Link to="/"><u><b>Browse More Templates</b></u></Link></li>
@@ -55,7 +55,7 @@ const Footer = () => {
                   </div>
 
                   <div className="contact-me">
-                     <h4>Contact Me</h4>
+                     <h4 className='h4-size'>Contact Me</h4>
                      <ul>
                         <li>
                            <a href='mailto:hebibullahmustafazade@gmail.com' className="email">

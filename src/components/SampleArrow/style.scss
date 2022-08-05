@@ -6,7 +6,7 @@
    position: absolute;
    z-index: 100;
    top: -180px;
-   background-color: #EFF0F6;
+   background-color: $neutral-300;
    min-height: 80px;
    min-width: 80px;
    border-radius: 50%;
@@ -15,8 +15,8 @@
    transition: 0.4s;
 
    &:hover {
-      background-color: $dark-color;
-      color: #fff;
+      background-color: $neutral-800;
+      color: $neutral-100;
    }
 
    

@@ -1,13 +1,13 @@
 @use "../../scss/" as *;
 
 .footer {
-   border-top: 1px solid #d9dbe9;
+   border-top: 1px solid $neutral-400;
    padding-top: 120px;
 
    .footer-wrapper {
       @include flex(space-between, flex-start);
       padding: 0 24px 120px;
-      border-bottom: 1px solid #d9dbe9;
+      border-bottom: 1px solid $neutral-400;
 
       .footer-main {
          width: 30%;
@@ -38,10 +38,6 @@
          @include flex(space-around, flex-start);
 
          h4 {
-            font-size: 22px;
-            font-weight: 700;
-            line-height: 1.272em;
-            color: $dark-color;
             margin-bottom: 32px;
          }
 

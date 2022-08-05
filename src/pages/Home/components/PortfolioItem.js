@@ -15,7 +15,7 @@ const PortfolioItem = () => {
          </div>
 
          <div className="item-content">
-            <h3 className='subtitle'>Todo List App Redesign</h3>
+            <h3 className='h3-size'>Todo List App Redesign</h3>
             <p className='paragraph'>
                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus mattis nunc aliquam tincidunt est non dolor sit consectuetur do.
             </p>

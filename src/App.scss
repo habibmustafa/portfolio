@@ -14,7 +14,7 @@
 }
 
 body {
-   background-color: $body-bg;
+   background-color: $neutral-100;
    font-family: satoshi;
 }
 
@@ -24,25 +24,53 @@ body {
    padding: 0 25px;
 }
 
-.title {
-   color: $dark-color;
-   font-size: 42px;
-   line-height: 1.38em;
+.h1-size {
+   font-size: 68px;
    font-weight: 700;
+   line-height: 1.300;
+   color: $neutral-800;
 }
 
-.subtitle {
-   color: $dark-color;
+.h2-size {
+   font-size: 42px;
+   font-weight: 700;
+   line-height: 1.380;
+   color: $neutral-800;
+}
+
+.h3-size {
    font-size: 24px;
    font-weight: 700;
-   line-height: 1.333em;
+   line-height: 1.333;
+   color: $neutral-700;
+}
+
+.h4-size {
+   font-size: 22px;
+   font-weight: 700;
+   line-height: 1.272;
+   color: $neutral-800;
+}
+
+.h5-size {
+   font-size: 18px;
+   font-weight: 700;
+   line-height: 1.333;
+   color: $neutral-800;
+}
+
+.h6-size {
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 1.375;
+   color: $neutral-800;
 }
 
 .paragraph {
-   color: $gray-color;
    font-size: 18px;
    line-height: 1.777em;
    font-weight: 500;
+   color: $neutral-600;
 }
 
 a {

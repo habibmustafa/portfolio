@@ -40,8 +40,8 @@ const Home = () => {
                   data-aos="fade-zoom-in"
                   data-aos-delay="100"
                >
-                  <h3 className='subtitle'>Hey, I’m Habib Mustafa</h3>
-                  <h1 className='hero-title'>I enjoy designing tech websites and digital products</h1>
+                  <h3 className='h3-size'>Hey, I’m Habib Mustafa</h3>
+                  <h1 className='h1-size'>I enjoy designing tech websites and digital products</h1>
                   <div className='line'>
                      <img src="https://assets.website-files.com/61129bb2ecedf803564c68ec/6112b0068db0b60858060db4_hero-underline-personal-x-template.svg" alt="line" />
                   </div>
@@ -64,7 +64,7 @@ const Home = () => {
             {/* Services section */}
             <div className='services'>
                <div className='content' data-aos="fade-zoom-in">
-                  <h2 className='title'>My services</h2>
+                  <h2 className='h2-size'>My services</h2>
                   <p className='paragraph'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus mattis nunc aliquam tincidunt est non. Viverra nec eu.</p>
                </div>
 
@@ -111,7 +111,7 @@ const Home = () => {
                </div>
 
                <div className="about-content" data-aos="fade-zoom-in" data-aos-delay="300">
-                  <h2 className='title'>About me</h2>
+                  <h2 className='h2-size'>About me</h2>
                   <p className='paragraph'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus mattis nunc aliquam tincidunt est non. Viverra nec eu, in ridiculus egestas mi. Vulputate tristique porttitor enim aliquam ullamcorper. Velit dui laoreet in et mus.</p>
                   <div className='get-button'>
                      <Button to="/about" title="More about me" />
@@ -136,7 +136,7 @@ const Home = () => {
             <div className="take-portfolio">
                <div className="header">
                   <div className='header-content' data-aos="fade-zoom-in">
-                     <h2 className='title'>Take a look at my design portfolio</h2>
+                     <h2 className='h2-size'>Take a look at my design portfolio</h2>
                      <img src="https://assets.website-files.com/61129bb2ecedf803564c68ec/6112bdfb2b341387dfa368b4_portfolio-underline-personal-x-template.svg" alt="line" />
                   </div>
                </div>

@@ -9,7 +9,7 @@ const ServicesItem = ({ delay, src, title, content }) => {
       >
          <img src={src} alt="i" />
          <div className="item-content">
-            <h3 className='subtitle'>{title}</h3>
+            <h3 className='h3-size'>{title}</h3>
             <p className='paragraph'>{content}</p>
          </div>
       </div>
