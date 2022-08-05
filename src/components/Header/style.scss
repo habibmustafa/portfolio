@@ -7,15 +7,6 @@ div.header-container {
    font-size: 18px;
    color: $dark-color;
 
-   .logo {
-      transition: 0.3s;
-
-      &:hover {
-         transform: translateY(-4px);
-      }
-   }
-
-
    .nav-item {
       width: 350px;
       @include flex(space-between, unset);

@@ -1,20 +1,17 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import Logo from '../Logo'
 import "./style.scss"
 
 const Header = () => {
    return (
       <div className='container header-container' data-aos="fade-zoom-in">
-         <div className="logo">
-            <NavLink to="/">
-               <img src="https://assets.website-files.com/61129bb2ecedf803564c68ec/612a715b08e8df7a8419c063_logo-you-x-webflow-template.svg" alt="logo" />
-            </NavLink>
-         </div>
+         <Logo />
          <ul className="nav-item">
-            <li><NavLink to='/'>Home</NavLink></li>
-            <li><NavLink to='/about'>About</NavLink></li>
-            <li><NavLink to='/portfolio'>Portfolio</NavLink></li>
-            <li><NavLink to='/contact'>Contact</NavLink></li>
+            <li><Link to='/'>Home</Link></li>
+            <li><Link to='/about'>About</Link></li>
+            <li><Link to='/portfolio'>Portfolio</Link></li>
+            <li><Link to='/contact'>Contact</Link></li>
          </ul>
          <div>
             <a href='mailto:hebibullahmustafazade@gmail.com' className="email">

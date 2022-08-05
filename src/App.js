@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 import Header from "./components/Header"
 import './App.scss';
 import RoutesPage from './config/ReactRoutes';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
          <>
             <Header />
             <RoutesPage />
+            <Footer />
          </>
       </BrowserRouter>
    );
