@@ -60,7 +60,7 @@ const Footer = () => {
                         <li>
                            <a href='mailto:hebibullahmustafazade@gmail.com' className="email">
                               <img src="https://assets.website-files.com/61129bb2ecedf803564c68ec/6112a4fa0865622bd03376a4_email-icon-personal-x-template.svg" alt="mail" />
-                              <div>hebibullahmustafazade@gmail.com</div>
+                              <div>me@gmail.com</div>
                            </a>
                         </li>
                         <li>

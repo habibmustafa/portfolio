@@ -101,7 +101,6 @@
 // Take-portfolio start
 .take-portfolio {
    padding: 100px 0;
-
    .header {
       @include flex(space-between,center);
       margin-bottom: 80px;
@@ -117,4 +116,10 @@
          }
       }
    }
+
+   // .slick-list {
+   //    overflow: visible;
+   // }
 }
+
+// Take-portfolio end

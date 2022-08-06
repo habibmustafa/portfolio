@@ -11,11 +11,11 @@ import { SampleNextArrow, SamplePrevArrow } from '../../components/SampleArrow';
 const Home = () => {
 
    let settings = {
-      infinite: true,
+      infinite: false,
       speed: 600,
       slidesToShow: 2.5,
       slidesToScroll: 1,
-      initialSlide: -0.5,
+      initialSlide: 0,
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />,
       // responsive: [
@@ -33,13 +33,9 @@ const Home = () => {
    return (
       <div className='home-page'>
          <div className='container'>
-
             {/* Hero section */}
             <div className='hero'>
-               <div className="hero-content"
-                  data-aos="fade-zoom-in"
-                  data-aos-delay="100"
-               >
+               <div className="hero-content" data-aos="fade-zoom-in" data-aos-delay="100">
                   <h3 className='h3-size'>Hey, I’m Habib Mustafa</h3>
                   <h1 className='h1-size'>I enjoy designing tech websites and digital products</h1>
                   <div className='line'>
@@ -134,14 +130,14 @@ const Home = () => {
             </div> */}
 
             <div className="take-portfolio">
-               <div className="header">
-                  <div className='header-content' data-aos="fade-zoom-in">
+               <div className="header" data-aos="fade-zoom-in">
+                  <div className='header-content'>
                      <h2 className='h2-size'>Take a look at my design portfolio</h2>
                      <img src="https://assets.website-files.com/61129bb2ecedf803564c68ec/6112bdfb2b341387dfa368b4_portfolio-underline-personal-x-template.svg" alt="line" />
                   </div>
                </div>
 
-               <div className="portfolio-items" data-aos="fade-zoom-in" data-aos-delay="100">
+               <div className="portfolio-items" data-aos="fade-zoom-in" data-aos-offset="100">
                   <Slider {...settings}>
                      <PortfolioItem />
                      <PortfolioItem />
@@ -151,7 +147,6 @@ const Home = () => {
                   </Slider>
                </div>
             </div>
-
          </div >
       </div >
    )
