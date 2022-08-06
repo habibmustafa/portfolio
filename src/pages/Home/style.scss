@@ -2,6 +2,7 @@
 
 // Hero Start
 .hero {
+   position: relative;
    padding: 69px 0 100px;
    @include flex(space-between, center);
 

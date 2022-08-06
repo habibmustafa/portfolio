@@ -1,32 +1,152 @@
 @use "../../scss" as *;
 
-div.header-container {
-   @include flex(space-between, center);
-   padding: 32px;
-   font-weight: 500;
-   font-size: 18px;
-   color: $neutral-800;
+.header {
+   position: relative;
 
-   .nav-item {
-      width: 350px;
-      @include flex(space-between, unset);
-   }
+   .header-wrapper {
 
-   a:not(.logo a) {
-      transition: 0.4s opacity;
+      .container {
+         position: relative;
+         z-index: 5;
+         background-color: $neutral-100;
+         padding-top: 32px;
+         padding-bottom: 32px;
+         @include flex(space-between, center);
+         font-weight: 500;
+         font-size: 18px;
+         color: $neutral-800;
 
-      &:hover {
-         opacity: 0.7;
+         .header-logo {
+            @include tablet {
+               margin-right: auto;
+            }
+         }
+
+         .nav-item {
+            width: 350px;
+            @include flex(space-between, unset);
+         }
+
+         a:not(.logo a) {
+            transition: 0.4s opacity;
+
+            &:hover {
+               opacity: 0.7;
+            }
+         }
+
+         .email {
+            @include flex(center, center);
+
+            img {
+               margin-right: 12px;
+            }
+         }
+
+         // hamburher menu
+
+         .nav-menu {
+            transition: all 0.3s ease-in-out;
+            position: relative;
+            height: 100%;
+            right: 20px;
+
+            @include tablet {
+               margin-left: 70px;
+            }
+
+            &::before {
+               content: '';
+               position: absolute;
+               z-index: 1;
+               top: 50%;
+               left: 50%;
+               bottom: 0;
+               transform: translate(-50%, -50%);
+               width: 60px;
+               height: 60px;
+               border-radius: 50%;
+               background-color: black;
+            }
+
+            span {
+               position: relative;
+               z-index: 2;
+               transition: all 0.3s ease-in-out;
+               display: block;
+               width: 24px;
+               height: 2px;
+               border-radius: 9999px;
+               background-color: #ddd;
+
+               &:not(:last-child) {
+                  margin-bottom: 5px;
+               }
+            }
+
+            &.active {
+               transition-delay: 0.4s;
+               transform: rotate(45deg);
+
+               span {
+                  &:nth-child(2) {
+                     width: 0;
+                  }
+
+                  &:nth-child(1),
+                  &:nth-child(3) {
+                     transition-delay: 0.2s;
+                  }
+
+                  &:nth-child(1) {
+                     transform: translateY(7px);
+                  }
+
+                  &:nth-child(3) {
+                     transform: translateY(-7px) rotate(90deg);
+                  }
+               }
+            }
+         }
+
       }
    }
 
-   .email {
-      @include flex(center, center);
 
-      img {
-         margin-right: 12px;
+   // nav overlay 
+   .nav-overlay {
+      position: absolute;
+      display: block;
+      top: 100%;
+      right: 0;
+      height: 2000px;
+      width: 100%;
+      z-index: 1;
+
+      .nav-item-overlay {
+         background-color: $neutral-100;
+         padding: 0 25px 20px;
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         width: 100%;
+         transition: 0.4s;
+         transform: translateY(-270px);
+         border-bottom: 1px solid $neutral-400;
+
+         &.active {
+            transform: translateY(0px);
+         }
+
+         li {
+            font-size: 24px;
+            line-height: 1em;
+            padding: 10px 0;
+            margin-bottom: 16px;
+            text-align: left;
+         }
+
       }
    }
-
-
 }
