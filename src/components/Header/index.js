@@ -50,14 +50,14 @@ const Header = () => {
             </div>
          </div>
 
-
+         {/* helelik bele qalsin */}
          <div className="nav-overlay" style={{ display: menuButton ? 'block' : 'none' }}>
             {/*  style={{display: handleMenu ? 'block': 'none'}} */}
-            <ul className={`nav-item-overlay ${handleMenu && 'active'}`} >
-               <li><Link to='/'>Home</Link></li>
-               <li><Link to='/about'>About</Link></li>
-               <li><Link to='/portfolio'>Portfolio</Link></li>
-               <li><Link to='/contact'>Contact</Link></li>
+            <ul className={`nav-item-overlay ${handleMenu && 'active'}`}>
+               <li><Link onClick={() => {sethandleMenu(false)}} to='/'>Home</Link></li>
+               <li><Link onClick={() => {sethandleMenu(false)}} to='/about'>About</Link></li>
+               <li><Link onClick={() => {sethandleMenu(false)}} to='/portfolio'>Portfolio</Link></li>
+               <li><Link onClick={() => {sethandleMenu(false)}} to='/contact'>Contact</Link></li>
             </ul>
          </div>
 
