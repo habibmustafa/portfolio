@@ -18,16 +18,16 @@ const Home = () => {
       initialSlide: 0,
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />,
-      // responsive: [
-      //    {
-      //       breakpoint: 1024,
-      //       settings: {
-      //          slidesToShow: 1,
-      //          slidesToScroll: 1,
-      //          infinite: true,
-      //       }
-      //    }
-      // ]
+      responsive: [
+         {
+            breakpoint: 992,
+            settings: {
+               slidesToShow: 1.5,
+               slidesToScroll: 1,
+               initialSlide: 0,
+            }
+         }
+      ]
    };
 
    return (

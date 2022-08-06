@@ -4,22 +4,42 @@
    border-top: 1px solid $neutral-400;
    padding-top: 120px;
 
+   @include tablet {
+      padding-top: 80px;
+   }
+
    .footer-wrapper {
       @include flex(space-between, flex-start);
       padding: 0 24px 120px;
       border-bottom: 1px solid $neutral-400;
+
+      @include tablet {
+         flex-direction: column;
+         padding: 0 0 64px;
+      }
 
       .footer-main {
          width: 30%;
          max-width: 330px;
          margin-right: 48px;
 
+         @include tablet {
+            width: auto;
+            max-width: 60%;
+            margin-right: 0;
+            margin-bottom: 60px;
+         }
+
          p {
             margin: 20px 0 36px;
+
+            @include tablet {
+               margin: 15px 0 20px;
+            }
          }
 
          .social-links {
-            @include flex(flex, center);
+            @include flex(flex-start, center);
             gap: 22px;
 
             a {
@@ -34,9 +54,14 @@
       }
 
       .footer-nav-wrapper {
-         flex: 1;
+         width: 70%;
          @include flex(space-between, flex-start);
          gap: 15px;
+
+         @include tablet {
+            max-width: 780px;
+            width: 100%;
+         }
 
          h4 {
             margin-bottom: 32px;

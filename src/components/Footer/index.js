@@ -50,7 +50,7 @@ const Footer = () => {
                      <h4 className='h4-size'>Utility Pages</h4>
                      <ul>
                         <li><Link to="/404">404 Not Found</Link></li>
-                        <li><Link to="/"><u><b>Browse More Templates</b></u></Link></li>
+                        <li><Link to="/"><u><b>Browse More Temp...</b></u></Link></li>
                      </ul>
                   </div>
 
