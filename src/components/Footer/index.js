@@ -5,8 +5,8 @@ import { Link } from "react-router-dom"
 
 const Footer = () => {
    return (
-      <div className="footer">
-         <div className="container" data-aos="fade-zoom-in" data-aos-offset="100">
+      <div className="footer" data-aos="fade-zoom-in" data-aos-offset="100">
+         <div className="container">
 
             {/* main */}
             <div className='footer-wrapper'>

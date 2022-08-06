@@ -61,6 +61,7 @@
          @include tablet {
             max-width: 780px;
             width: 100%;
+            flex-wrap: wrap;
          }
 
          h4 {

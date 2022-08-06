@@ -143,12 +143,12 @@
          left: 0;
          right: 0;
          width: 100%;
-         transition: 0.4s;
-         transform: translateY(-270px);
+         transition: 0.35s ease-out;
+         transform: translateY(-100%);
          border-bottom: 1px solid $neutral-400;
 
          &.active {
-            transform: translateY(0px);
+            transform: translateY(0);
          }
 
          li {
