@@ -26,7 +26,15 @@ const Home = () => {
                slidesToScroll: 1,
                initialSlide: 0,
             }
-         }
+         },
+         {
+            breakpoint: 768,
+            settings: {
+               slidesToShow: 1.2,
+               slidesToScroll: 1,
+               initialSlide: 0,
+            }
+         },
       ]
    };
 

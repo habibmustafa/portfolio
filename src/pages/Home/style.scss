@@ -11,6 +11,10 @@
       flex-direction: column;
    }
 
+   @include mobileL {
+      padding: 45px 0 60px;
+   }
+
    .hero-content {
       max-width: 610px;
 
@@ -40,6 +44,10 @@
          @include tablet {
             margin-top: 20px;
          }
+
+         @include mobileL {
+            margin-top: 15px;
+         }
       }
    }
 
@@ -58,6 +66,10 @@
 
    @include tablet {
       padding: 50px 0;
+   }
+
+   @include mobileL {
+      padding: 75px 0 60px;
    }
 
    .content {
@@ -97,6 +109,13 @@
       @include tablet {
          grid-gap: 32px;
          @include before(700px);
+      }
+
+      @include mobileL {
+         grid-template-columns: 1fr;
+         @include before(600px, 10px);
+         grid-gap: 15px;
+         margin-bottom: 25px;
       }
    }
 
@@ -151,6 +170,7 @@
 
       p {
          margin-bottom: 56px;
+
          @include tablet {
             margin-bottom: 24px;
          }

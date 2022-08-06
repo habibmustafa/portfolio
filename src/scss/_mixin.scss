@@ -4,7 +4,7 @@
    align-items: $align-items;
 }
 
-@mixin before($width) {
+@mixin before($width, $radius: 30px) {
    &::before {
       content: '';
       position: absolute;
@@ -15,6 +15,6 @@
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: -9;
-      border-radius: 30px;
+      border-radius: $radius;
    }
 }

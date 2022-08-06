@@ -32,6 +32,10 @@ body {
    @include tablet {
       font-size: 54px;
    }
+   @include mobileL {
+      font-size: 44px;
+   }
+
 }
 
 .h2-size {
@@ -39,6 +43,9 @@ body {
    font-weight: 700;
    line-height: 1.380;
    color: $neutral-800;
+   @include mobileL {
+      font-size: 35px;  
+   }
 }
 
 .h3-size {
@@ -46,6 +53,9 @@ body {
    font-weight: 700;
    line-height: 1.333;
    color: $neutral-700;
+   @include mobileL {
+      font-size: 22px;
+   }
 }
 
 .h4-size {

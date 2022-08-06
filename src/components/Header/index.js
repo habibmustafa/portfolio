@@ -33,7 +33,7 @@ const Header = () => {
                   <li><Link to='/portfolio'>Portfolio</Link></li>
                   <li><Link to='/contact'>Contact</Link></li>
                </ul>}
-               <div>
+               <div className='header-email'>
                   <a href='mailto:hebibullahmustafazade@gmail.com' className="email">
                      <img src="https://assets.website-files.com/61129bb2ecedf803564c68ec/6112a4fa0865622bd03376a4_email-icon-personal-x-template.svg" alt="m" />
                      <div>me@gmail.com</div>

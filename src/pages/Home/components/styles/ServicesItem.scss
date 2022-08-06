@@ -10,6 +10,10 @@
       flex-direction: column;
    }
 
+   @include mobileL {
+      padding: 40px 32px;
+   }
+
    img {
       border-radius: 20px;
       margin-right: 28px;
