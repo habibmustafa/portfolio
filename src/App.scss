@@ -29,6 +29,9 @@ body {
    font-weight: 700;
    line-height: 1.300;
    color: $neutral-800;
+   @include tablet {
+      font-size: 54px;
+   }
 }
 
 .h2-size {

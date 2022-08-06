@@ -2,16 +2,27 @@
 
 .item {
    padding: 48px 48px 48px 40px;
-   @include flex(center, flex-start);
+   @include flex(flex-start, flex-start);
    border-radius: 20px;
    background-color: $neutral-100;
 
+   @include tablet {
+      flex-direction: column;
+   }
+
    img {
-      margin-right: 28px;
       border-radius: 20px;
+      margin-right: 28px;
+      @include tablet {
+         margin-right: 0;
+         margin-bottom: 24px;
+      }
    }
 
    h3 {
       margin-bottom: 12px;
+      @include tablet {
+         margin-bottom: 10px;
+      }
    }
 }
