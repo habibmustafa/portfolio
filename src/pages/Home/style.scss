@@ -57,6 +57,7 @@
       }
    }
 }
+
 // Hero end
 
 // Services start
@@ -122,6 +123,7 @@
       text-align: center;
    }
 }
+
 // Services end
 
 // About-me start
@@ -191,6 +193,7 @@
       }
    }
 }
+
 // About-me end
 
 // Take-portfolio start
@@ -198,16 +201,27 @@
    padding: 100px 0;
 
    @include tablet {
-      padding: 80px 0 100px;
+      padding: 80px 0 120px;
    }
 
    .header {
       @include flex(space-between, center);
       margin-bottom: 80px;
 
+      @include mobileL {
+         @include flex(space-between, flex-start);
+         flex-direction: column;
+         gap: 40px;
+         margin-bottom: 40px;
+      }
+
       .header-content {
          max-width: 450px;
          position: relative;
+
+         @include mobileL {
+            max-width: 350px;
+         }
 
          img {
             position: absolute;
@@ -230,6 +244,11 @@
             transition: 0.4s;
             border: none;
 
+            @include mobileL {
+               min-height: 72px;
+               min-width: 72px;
+            }
+
             &:hover {
                background-color: $neutral-800;
                color: $neutral-100;
@@ -239,12 +258,6 @@
                position: relative;
                font-size: 27px;
             }
-
-            &:first-child {
-               .icon {
-                  left: 6px;
-               }
-            }
          }
       }
    }
@@ -253,6 +266,7 @@
    //    overflow: visible;
    // }
 }
+
 // Take-portfolio end
 
 // 

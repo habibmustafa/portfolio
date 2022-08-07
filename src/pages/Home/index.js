@@ -7,7 +7,7 @@ import Button from '../../components/Button'
 import ServicesItem from './components/ServicesItem'
 import PortfolioItem from './components/PortfolioItem'
 // import SampleArrow from '../../components/SampleArrow';
-import { MdArrowBackIos, MdArrowForwardIos } from 'react-icons/md'
+import { MdOutlineArrowBackIos, MdOutlineArrowForwardIos } from 'react-icons/md'
 
 
 const Home = () => {
@@ -16,7 +16,6 @@ const Home = () => {
 
    let settings = {
       infinite: true,
-      centerMode: false,
       speed: 600,
       slidesToShow: 2.5,
       slidesToScroll: 1,
@@ -33,7 +32,7 @@ const Home = () => {
          {
             breakpoint: 768,
             settings: {
-               slidesToShow: 1.2,
+               slidesToShow: 1.5,
                slidesToScroll: 1,
                initialSlide: 0,
             }
@@ -150,8 +149,8 @@ const Home = () => {
                   </div>
 
                   <div className="arrows">
-                     <button onClick={() => { sliderRef.current.slickPrev() }} className='arrow'><MdArrowBackIos className="icon" /></button>
-                     <button onClick={() => { sliderRef.current.slickNext() }} className='arrow'><MdArrowForwardIos className="icon" /></button>
+                     <button onClick={() => { sliderRef.current.slickPrev() }} className='arrow'><MdOutlineArrowBackIos className="icon" /></button>
+                     <button onClick={() => { sliderRef.current.slickNext() }} className='arrow'><MdOutlineArrowForwardIos className="icon" /></button>
                   </div>
                </div>
 
