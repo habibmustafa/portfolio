@@ -6,8 +6,6 @@ const PortfolioItem = () => {
    const [animation, setAnimation] = useState(false)
    let navigate = useNavigate()
 
-   console.log(1);
-
    return (
       <div className='portfolio-item' onClick={() => {navigate("./portfolio")}} onMouseEnter={() => { setAnimation(true) }} onMouseLeave={() => { setAnimation(false) }}>
          <div className="image-wrapper">

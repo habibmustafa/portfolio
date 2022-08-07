@@ -1,6 +1,12 @@
+@use "../../scss/" as *;
+
 .logo {
    cursor: pointer;
    transition: 0.3s;
+
+   @include mobileP {
+      width: 106px;
+   }
 
    &:hover {
       transform: translateY(-4px);

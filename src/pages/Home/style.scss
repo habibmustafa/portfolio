@@ -108,12 +108,16 @@
 
       @include tablet {
          grid-gap: 32px;
-         @include before(700px);
+         @include before(75%);
       }
-
       @include mobileL {
          grid-template-columns: 1fr;
-         @include before(600px, 10px);
+         @include before(85%, 10px);
+         grid-gap: 15px;
+         margin-bottom: 25px;
+      }
+      @include mobileP {
+         @include before(90%, 10px);
          grid-gap: 15px;
          margin-bottom: 25px;
       }

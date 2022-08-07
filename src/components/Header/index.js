@@ -5,12 +5,18 @@ import "./style.scss"
 
 const Header = () => {
    const [menuButton, setMenuButton] = useState(window.innerWidth < 992 ? true : false)
+   const [mailHide, setMailHide] = useState(window.innerWidth < 768 ? false : true)
    const [handleMenu, sethandleMenu] = useState(false)
 
    const handleResize = () => {
-      window.innerWidth < 992 ? setMenuButton(true) : setMenuButton(false)
+      window.innerWidth < 768 ? setMailHide(false) : setMailHide(true)
+      
       if (window.innerWidth > 991) {
          sethandleMenu(false)
+         setMenuButton(false)
+      }
+      else {
+         setMenuButton(true)
       }
    }
 
@@ -33,12 +39,12 @@ const Header = () => {
                   <li><Link to='/portfolio'>Portfolio</Link></li>
                   <li><Link to='/contact'>Contact</Link></li>
                </ul>}
-               <div className='header-email'>
+               {mailHide && <div className='header-email'>
                   <a href='mailto:hebibullahmustafazade@gmail.com' className="email">
                      <img src="https://assets.website-files.com/61129bb2ecedf803564c68ec/6112a4fa0865622bd03376a4_email-icon-personal-x-template.svg" alt="m" />
                      <div>me@gmail.com</div>
                   </a>
-               </div>
+               </div>}
 
                {/* hamburger menu */}
                {menuButton &&
@@ -58,7 +64,14 @@ const Header = () => {
                <li><Link onClick={() => {sethandleMenu(false)}} to='/about'>About</Link></li>
                <li><Link onClick={() => {sethandleMenu(false)}} to='/portfolio'>Portfolio</Link></li>
                <li><Link onClick={() => {sethandleMenu(false)}} to='/contact'>Contact</Link></li>
+               {mailHide || <li className='header-email'>
+                  <a href='mailto:hebibullahmustafazade@gmail.com' className="email">
+                     <img src="https://assets.website-files.com/61129bb2ecedf803564c68ec/6112a4fa0865622bd03376a4_email-icon-personal-x-template.svg" alt="m" />
+                     <div>me@gmail.com</div>
+                  </a>
+               </li>}
             </ul>
+            
          </div>
 
       </div>
