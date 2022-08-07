@@ -1,0 +1,225 @@
+@use "../../scss/" as *;
+
+.contact {
+
+
+   .container {
+      max-width: 838px;
+
+      .contact-me {
+         padding: 100px 0;
+         border-bottom: 1px solid $neutral-400;
+
+         @include tablet {
+            padding: 55px 0 80px;
+         }
+
+         @include mobileL {
+            padding: 48px 0 64px;
+         }
+
+         @include mobileP {
+            padding: 40px 0 64px;
+         }
+
+         .contact-title {
+            @include flex(center, center);
+            flex-direction: column;
+            gap: 24px;
+            margin-bottom: 75px;
+            width: 100%;
+            text-align: center;
+
+            @include tablet {
+               gap: 20px;
+               margin-bottom: 70px;
+            }
+
+            @include mobileL {
+               gap: 15px;
+               margin-bottom: 64px;
+            }
+
+            @include mobileP {
+               gap: 10px;
+               margin-bottom: 60px;
+            }
+         }
+
+         .contact-form {
+            padding: 78px 62px;
+            margin-bottom: 56px;
+            border: 1px solid $neutral-400;
+            border-radius: 30px;
+
+            @include tablet {
+               padding: 40px 32px;
+               margin-bottom: 48px;
+            }
+
+            @include mobileL {
+               padding: 40px 25px;
+               margin-bottom: 40px;
+               border-radius: 15px;
+            }
+
+            @include mobileP {
+               padding: 33px 25px;
+            }
+
+            .contact-form-grid {
+               display: grid;
+               grid-auto-columns: 1fr;
+               grid-column-gap: 40px;
+               grid-row-gap: 24px;
+               grid-template-columns: 1fr 1fr;
+
+               @include mobileL {
+                  grid-column-gap: 24px;
+                  grid-row-gap: 32px;
+                  grid-template-columns: minmax(100%, 100%);
+               }
+
+               .input-wrapper {
+                  @include flex (center, flex-start);
+                  flex-direction: column;
+                  gap: 17px;
+
+                  label {
+                     font-size: 18px;
+                     font-weight: 700;
+                     line-height: 1.777;
+                     color: $neutral-800;
+                  }
+
+                  input,
+                  textarea {
+                     height: auto;
+                     width: 100%;
+                     min-height: 70px;
+                     margin-bottom: 0px;
+                     padding: 25px 27px;
+                     border-radius: 500px;
+                     border: 1px solid $neutral-400;
+                     transition: all 0.3s ease;
+                     color: $neutral-700;
+                     font-size: 18px;
+                     line-height: 1em;
+
+                     @include mobileL {
+                        min-height: 60px;
+                        padding: 20px 27px;
+                     }
+
+                     @include mobileP {
+                        padding: 18px 24px;
+                     }
+
+                     &:hover {
+                        border-color: $neutral-600;
+                     }
+
+                     &:focus {
+                        border-color: $neutral-800;
+                     }
+
+                     &::placeholder {
+                        color: $neutral-500;
+                     }
+
+
+                  }
+
+                  textarea {
+                     border-radius: 20px;
+                     resize: none;
+                  }
+
+                  &.message {
+                     grid-row-start: span 1;
+                     grid-row-end: span 1;
+                     grid-column-start: span 2;
+                     grid-column-end: span 2;
+
+                     @include mobileL {
+                        grid-column-start: span 1;
+                        grid-column-end: span 1;
+                     }
+                  }
+
+                  &.button {
+                     input {
+                        width: auto;
+                        padding: 24px 60px;
+                        cursor: pointer;
+                        border: none;
+                        background-color: $neutral-800;
+                        color: $neutral-100;
+
+                        @include mobileL {
+                           padding: 23px 42px;
+                           width: 100%;
+                        }
+
+                        &:hover {
+                           transform: translateY(-5px);
+                           background-color: $neutral-100;
+                           color: $neutral-800;
+                           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                        }
+                     }
+                  }
+               }
+            }
+         }
+
+         .contact-social {
+            @include flex(space-around, center);
+
+            @include mobileP {
+               flex-direction: column;
+               @include flex(flex-start, center);
+               gap: 22px;
+            }
+
+            a {
+               @include flex(center, center);
+               font-size: 24px;
+               line-height: 1.777em;
+               font-weight: 500;
+               color: $neutral-700;
+               transition: 0.2s;
+
+               @include tablet {
+                  font-size: 22px;
+               }
+
+               @include mobileL {
+                  font-size: 19px;
+                  line-height: 1em;
+               }
+
+               img {
+                  margin-right: 12px;
+                  width: 26px;
+
+                  @include tablet {
+                     width: 24px;
+                  }
+
+                  @include mobileL {
+                     width: 22px;
+                  }
+               }
+
+               &:hover {
+                  opacity: 0.7;
+               }
+            }
+         }
+      }
+   }
+
+
+   .questions {}
+}

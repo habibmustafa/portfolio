@@ -1,10 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import "./style.scss"
 
 const Button = ({ to, title }) => {
+
+   const navigate = useNavigate()
+
    return (
-      <Link className='get' to={to}>{title}</Link>
+      <button className='get' onClick={() => {navigate(`${to}`)}}>{title}</button>
    )
 }
 
