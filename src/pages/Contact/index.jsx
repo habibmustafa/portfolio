@@ -1,7 +1,20 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import "./style.scss"
+import emailjs from "@emailjs/browser"
 
 const Contact = () => {
+   const form = useRef()
+
+   const sendEmail = (e) => {
+      e.preventDefault()
+      emailjs.sendForm('service_mffkcm4', 'template_jfsdgtb', form.current, '8kOeDcVnJ0N6Cw-5t')
+         .then((result) => {
+            console.log(result.text);
+         }, (error) => {
+            console.log(error.text);
+         });
+   }
+
    return (
       <div className='contact'>
          <div className="container">
@@ -15,28 +28,28 @@ const Contact = () => {
                   </p>
                </div>
                <div className="contact-form">
-                  <form>
+                  <form ref={form} onSubmit={sendEmail}>
                      <div className='contact-form-grid'>
                         <div className="input-wrapper">
                            <label htmlFor="name">Name</label>
-                           <input placeholder='Full Name' type="text" name="name" id="name" />
+                           <input placeholder='Full Name' type="text" name="name" id="name" required/>
                         </div>
                         <div className="input-wrapper">
                            <label htmlFor="email">Email Address</label>
-                           <input placeholder='contact@you.com' type="email" name="email" id="email" />
+                           <input placeholder='contact@you.com' type="email" name="email" id="email" required/>
                         </div>
                         <div className="input-wrapper">
                            <label htmlFor="phone">Phone</label>
-                           <input placeholder='(+994) 51 600-2230' type="tel" name="phone" id="phone" />
+                           <input placeholder='(+994) 51 600-2230' type="tel" name="phone" id="phone" required/>
                         </div>
                         <div className="input-wrapper">
                            <label htmlFor="subject">Subject</label>
-                           <input placeholder='Ex. New Project' type="text" name="subject" id="subject" />
+                           <input placeholder='Ex. New Project' type="text" name="subject" id="subject" required/>
                         </div>
 
                         <div className="input-wrapper message">
                            <label htmlFor="message">Message</label>
-                           <textarea placeholder="Please write your message..." name="message" id="message" rows="5"></textarea>
+                           <textarea placeholder="Please write your message..." name="message" id="message" rows="5" required></textarea>
                         </div>
                         <div className="input-wrapper button">
                            <input type="submit" value="Send Message" data-wait="Please wait..." />
