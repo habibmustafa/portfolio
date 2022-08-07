@@ -149,6 +149,7 @@ const Home = () => {
                </div>
             </div> */}
 
+            {/* Take-portfolio section */}
             <div className="take-portfolio">
                <div className="header" data-aos="fade-zoom-in">
                   <div className='header-content'>

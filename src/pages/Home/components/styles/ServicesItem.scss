@@ -9,9 +9,11 @@
    @include tablet {
       flex-direction: column;
    }
-
    @include mobileL {
       padding: 40px 32px;
+   }
+   @include mobileL {
+      padding: 33px 25px;
    }
 
    img {

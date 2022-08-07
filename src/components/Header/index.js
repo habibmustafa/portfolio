@@ -32,7 +32,7 @@ const Header = () => {
       <div className='header'>
          <div className='header-wrapper'>
             <div className='container' data-aos="fade-zoom-in">
-               <div className='header-logo'><Logo /></div>
+               <div className='header-logo' onClick={() => {sethandleMenu(false)}}><Logo /></div>
                {menuButton || <ul className="nav-item">
                   <li><Link to='/'>Home</Link></li>
                   <li><Link to='/about'>About</Link></li>

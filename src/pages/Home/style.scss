@@ -15,6 +15,11 @@
       padding: 45px 0 60px;
    }
 
+   @include mobileP {
+      padding: 40px 0 55px;
+   }
+
+
    .hero-content {
       max-width: 610px;
 
@@ -36,6 +41,8 @@
          position: relative;
          top: -16px;
          z-index: -10;
+         width: 80%;
+         margin: 0 auto;
       }
 
       .get-button {
@@ -48,6 +55,10 @@
          @include mobileL {
             margin-top: 15px;
          }
+
+         @include mobileP {
+            margin-top: 10px;
+         }
       }
    }
 
@@ -57,7 +68,6 @@
       }
    }
 }
-
 // Hero end
 
 // Services start
@@ -70,6 +80,10 @@
 
    @include mobileL {
       padding: 75px 0 60px;
+   }
+
+   @include mobileP {
+      padding: 56px 0;
    }
 
    .content {
@@ -110,16 +124,20 @@
          grid-gap: 32px;
          @include before(75%);
       }
+
       @include mobileL {
          grid-template-columns: 1fr;
          @include before(85%, 10px);
          grid-gap: 15px;
          margin-bottom: 25px;
       }
+
       @include mobileP {
          @include before(90%, 10px);
          grid-gap: 15px;
-         margin-bottom: 25px;
+         margin-bottom: 15px;
+         padding: 25px 0;
+
       }
    }
 
@@ -127,7 +145,6 @@
       text-align: center;
    }
 }
-
 // Services end
 
 // About-me start
@@ -144,6 +161,10 @@
    @include mobileL {
       padding: 60px 0 60px;
    }
+   
+   @include mobileP {
+      padding: 50px 0 50px;
+   }
 
    .about-image {
       width: 50%;
@@ -158,6 +179,10 @@
 
          @include mobileL {
             border-radius: 12px;
+         }
+
+         @include mobileP {
+            border-radius: 8px;
          }
       }
    }
@@ -186,6 +211,10 @@
          @include mobileL {
             margin-bottom: 15px;
          }
+
+         @include mobileP {
+            margin-bottom: 10px;
+         }
       }
 
       p {
@@ -197,7 +226,6 @@
       }
    }
 }
-
 // About-me end
 
 // Take-portfolio start
@@ -205,7 +233,11 @@
    padding: 100px 0;
 
    @include tablet {
-      padding: 80px 0 120px;
+      padding: 80px 0 110px;
+   }
+
+   @include mobileP {
+      padding: 60px 0 80px;
    }
 
    .header {
@@ -219,12 +251,21 @@
          margin-bottom: 40px;
       }
 
+      @include mobileP {
+         gap: 35x;
+         margin-bottom: 35px;
+      }
+
       .header-content {
          max-width: 450px;
          position: relative;
 
          @include mobileL {
             max-width: 350px;
+         }
+
+         @include mobileP {
+            max-width: 300px;
          }
 
          img {
@@ -252,6 +293,11 @@
                min-height: 72px;
                min-width: 72px;
             }
+            
+            @include mobileP {
+               min-height: 66px;
+               min-width: 66px;
+            }
 
             &:hover {
                background-color: $neutral-800;
@@ -261,6 +307,10 @@
 
             &:active {
                transform: scale(0.92);
+               
+               @include mobileP {
+                  transform: scale(0.96);
+               }
             }
 
             .icon {
@@ -275,7 +325,6 @@
    //    overflow: visible;
    // }
 }
-
 // Take-portfolio end
 
 // 

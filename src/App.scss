@@ -75,6 +75,12 @@ body {
    font-weight: 700;
    line-height: 1.272;
    color: $neutral-800;
+   @include mobileL {
+      font-size: 20px;
+   }
+   @include mobileP {
+      font-size: 18px;
+   }
 }
 
 .h5-size {
