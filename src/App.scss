@@ -22,6 +22,7 @@ body {
    max-width: 1250px;
    margin: 0 auto;
    padding: 0 25px;
+
    @include mobileP {
       padding: 0 15px;
    }
@@ -32,12 +33,15 @@ body {
    font-weight: 700;
    line-height: 1.300;
    color: $neutral-800;
+
    @include tablet {
       font-size: 54px;
    }
+
    @include mobileL {
       font-size: 44px;
    }
+
    @include mobileP {
       font-size: 38px;
    }
@@ -49,9 +53,11 @@ body {
    font-weight: 700;
    line-height: 1.380;
    color: $neutral-800;
+
    @include mobileL {
-      font-size: 35px;  
+      font-size: 35px;
    }
+
    @include mobileP {
       font-size: 29px;
    }
@@ -62,9 +68,11 @@ body {
    font-weight: 700;
    line-height: 1.333;
    color: $neutral-700;
+
    @include mobileL {
       font-size: 22px;
    }
+
    @include mobileP {
       font-size: 20px;
    }
@@ -75,9 +83,11 @@ body {
    font-weight: 700;
    line-height: 1.272;
    color: $neutral-800;
+
    @include mobileL {
       font-size: 20px;
    }
+
    @include mobileP {
       font-size: 18px;
    }

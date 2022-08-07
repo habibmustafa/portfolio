@@ -16,33 +16,25 @@ const Home = () => {
 
    let settings = {
       infinite: true,
+      // initialSlide: 0.5,
       speed: 600,
-      slidesToShow: 2.5,
+      slidesToShow: 3,
       slidesToScroll: 1,
-      initialSlide: 0.5,
       responsive: [
          {
             breakpoint: 992,
             settings: {
-               slidesToShow: 1.5,
+               initialSlide: false,
+               slidesToShow: 2,
                slidesToScroll: 1,
-               initialSlide: 0,
             }
          },
          {
             breakpoint: 768,
             settings: {
-               slidesToShow: 1.5,
-               slidesToScroll: 1,
                initialSlide: 0,
-            }
-         },
-         {
-            breakpoint: 480,
-            settings: {
                slidesToShow: 1,
                slidesToScroll: 1,
-               initialSlide: 0,
             }
          }
       ]
