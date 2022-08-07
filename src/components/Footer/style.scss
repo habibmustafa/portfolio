@@ -8,6 +8,10 @@
       padding-top: 80px;
    }
 
+   @include mobileL {
+      padding-top: 64px;
+   }
+
    .footer-wrapper {
       @include flex(space-between, flex-start);
       padding: 0 24px 120px;
@@ -26,6 +30,13 @@
          @include tablet {
             width: auto;
             max-width: 60%;
+            margin-right: 0;
+            margin-bottom: 60px;
+         }
+
+         @include mobileL {
+            width: auto;
+            max-width: 100%;
             margin-right: 0;
             margin-bottom: 60px;
          }
@@ -61,6 +72,11 @@
          @include tablet {
             max-width: 780px;
             width: 100%;
+         }
+
+         @include mobileL {
+            @include flex(flex-start, flex-start);
+            column-gap: 60px;
             flex-wrap: wrap;
          }
 

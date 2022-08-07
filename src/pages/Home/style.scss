@@ -252,6 +252,11 @@
             &:hover {
                background-color: $neutral-800;
                color: $neutral-100;
+               transform: scale(1.01);
+            }
+
+            &:active {
+               transform: scale(0.92);
             }
 
             .icon {
