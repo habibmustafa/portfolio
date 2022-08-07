@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import "./style.scss"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -6,18 +6,21 @@ import "slick-carousel/slick/slick-theme.css";
 import Button from '../../components/Button'
 import ServicesItem from './components/ServicesItem'
 import PortfolioItem from './components/PortfolioItem'
-import { SampleNextArrow, SamplePrevArrow } from '../../components/SampleArrow';
+// import SampleArrow from '../../components/SampleArrow';
+import { MdArrowBackIos, MdArrowForwardIos } from 'react-icons/md'
+
 
 const Home = () => {
 
+   const sliderRef = useRef()
+
    let settings = {
-      infinite: false,
+      infinite: true,
+      centerMode: false,
       speed: 600,
       slidesToShow: 2.5,
       slidesToScroll: 1,
-      initialSlide: 0,
-      nextArrow: <SampleNextArrow />,
-      prevArrow: <SamplePrevArrow />,
+      initialSlide: 0.5,
       responsive: [
          {
             breakpoint: 992,
@@ -37,6 +40,8 @@ const Home = () => {
          },
       ]
    };
+
+   // console.log(myRef.current.slickNext);
 
    return (
       <div className='home-page'>
@@ -143,10 +148,15 @@ const Home = () => {
                      <h2 className='h2-size'>Take a look at my design portfolio</h2>
                      <img src="https://assets.website-files.com/61129bb2ecedf803564c68ec/6112bdfb2b341387dfa368b4_portfolio-underline-personal-x-template.svg" alt="line" />
                   </div>
+
+                  <div className="arrows">
+                     <button onClick={() => { sliderRef.current.slickPrev() }} className='arrow'><MdArrowBackIos className="icon" /></button>
+                     <button onClick={() => { sliderRef.current.slickNext() }} className='arrow'><MdArrowForwardIos className="icon" /></button>
+                  </div>
                </div>
 
                <div className="portfolio-items" data-aos="fade-zoom-in" data-aos-offset="100">
-                  <Slider {...settings}>
+                  <Slider ref={sliderRef} {...settings}>
                      <PortfolioItem />
                      <PortfolioItem />
                      <PortfolioItem />

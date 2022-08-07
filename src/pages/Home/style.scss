@@ -57,7 +57,6 @@
       }
    }
 }
-
 // Hero end
 
 // Services start
@@ -123,7 +122,6 @@
       text-align: center;
    }
 }
-
 // Services end
 
 // About-me start
@@ -136,6 +134,7 @@
       flex-direction: column-reverse;
       width: 100%;
    }
+
    @include mobileL {
       padding: 60px 0 60px;
    }
@@ -150,7 +149,7 @@
       img {
          max-width: 100%;
          border-radius: 24px;
-      
+
          @include mobileL {
             border-radius: 12px;
          }
@@ -177,6 +176,7 @@
          @include tablet {
             margin-bottom: 20px;
          }
+
          @include mobileL {
             margin-bottom: 15px;
          }
@@ -191,7 +191,6 @@
       }
    }
 }
-
 // About-me end
 
 // Take-portfolio start
@@ -216,11 +215,44 @@
             z-index: -9;
          }
       }
+
+      .arrows {
+         @include flex (center, center);
+         gap: 25px;
+
+         .arrow {
+            @include flex(center, center);
+            background-color: $neutral-300;
+            min-height: 80px;
+            min-width: 80px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.4s;
+            border: none;
+
+            &:hover {
+               background-color: $neutral-800;
+               color: $neutral-100;
+            }
+
+            .icon {
+               position: relative;
+               font-size: 27px;
+            }
+
+            &:first-child {
+               .icon {
+                  left: 6px;
+               }
+            }
+         }
+      }
    }
 
    // .slick-list {
    //    overflow: visible;
    // }
 }
-
 // Take-portfolio end
+
+// 
