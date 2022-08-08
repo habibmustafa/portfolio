@@ -6,6 +6,19 @@
    padding-bottom: 50px;
    opacity: 1;
    cursor: pointer;
+   transition: background-color 0.1s;
+
+   @include tablet {
+      padding-bottom: 43px;
+   }
+
+   @include mobileL {
+      padding-bottom: 38px;
+   }
+
+   @include mobileP {
+      padding-bottom: 28px;
+   }
 
    &:hover {
       .icon {
@@ -17,10 +30,22 @@
       }
    }
 
+   &:active {
+      background-color: #B2B4C450; // $neutral-500
+   }
+
 
    &:not(:first-child) {
       border-top: 1px solid $neutral-400;
-      padding-top: 48px;
+      padding-top: 50px;
+
+      @include tablet {
+         padding-top: 48px;
+      }
+   
+      @include mobileP {
+         padding-top: 40px;
+      }
    }
 
    .icon {
@@ -38,6 +63,17 @@
       position: relative;
       z-index: -1;
       transition: 0.3s;
+
+      @include tablet {
+         margin-right: 24px;
+      }
+
+      @include mobileL {
+         min-width: 40px;
+         min-height: 40px;
+         margin-right: 16px;
+         margin-top: 0;
+      }
 
       span {
          position: absolute;
@@ -59,13 +95,17 @@
             }
          }
       }
-
    }
 
    .faq-item-content {
 
       p {
          margin-top: 16px;
+
+         @include mobileL {
+            margin-top: 24px;
+            margin-left: -50px;
+         }
 
          &.content {
             max-height: 0;
