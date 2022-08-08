@@ -21,11 +21,6 @@ const Contact = () => {
       emailjs.sendForm('service_mffkcm4', 'template_jfsdgtb', form.current, '8kOeDcVnJ0N6Cw-5t')
          .then((result) => {
             console.log(result.text);
-            setName('')
-            setEmail('')
-            setPhone('')
-            setSubject('')
-            setMessage('')
             setSendMessage(true)
          }, (error) => {
             console.log(error.text);
@@ -49,24 +44,24 @@ const Contact = () => {
                      <form ref={form} onSubmit={sendEmail}>
                         <div className='contact-form-grid'>
                            <div className="input-wrapper">
-                              <label htmlFor="name">Name</label>
+                              <label htmlFor="name">Name *</label>
                               <input onChange={(e) => { setName(e.target.value) }} value={name} placeholder='Full Name' type="text" name="name" id="name" required />
                            </div>
                            <div className="input-wrapper">
-                              <label htmlFor="email">Email Address</label>
+                              <label htmlFor="email">Email Address *</label>
                               <input onChange={(e) => { setEmail(e.target.value) }} value={email} placeholder='contact@you.com' type="email" name="email" id="email" required />
                            </div>
                            <div className="input-wrapper">
                               <label htmlFor="phone">Phone</label>
-                              <input onChange={(e) => { setPhone(e.target.value) }} value={phone} placeholder='(+994) 51 600-2230' type="tel" name="phone" id="phone" required />
+                              <input onChange={(e) => { setPhone(e.target.value) }} value={phone} placeholder='(+994) 50 123-4567' type="tel" name="phone" id="phone" />
                            </div>
                            <div className="input-wrapper">
                               <label htmlFor="subject">Subject</label>
-                              <input onChange={(e) => { setSubject(e.target.value) }} value={subject} placeholder='Ex. New Project' type="text" name="subject" id="subject" required />
+                              <input onChange={(e) => { setSubject(e.target.value) }} value={subject} placeholder='Ex. New Project' type="text" name="subject" id="subject" />
                            </div>
 
                            <div className="input-wrapper message">
-                              <label htmlFor="message">Message</label>
+                              <label htmlFor="message">Message *</label>
                               <textarea onChange={(e) => { setMessage(e.target.value) }} value={message} placeholder="Please write your message..." name="message" id="message" rows="5" required></textarea>
                            </div>
                            <div className="input-wrapper button">
