@@ -46,23 +46,27 @@
          }
 
          .contact-form {
+            min-height: 732px;
             padding: 78px 62px;
             margin-bottom: 56px;
             border: 1px solid $neutral-400;
             border-radius: 30px;
 
             @include tablet {
+               min-height: 656px;
                padding: 40px 32px;
                margin-bottom: 48px;
             }
 
             @include mobileL {
+               min-height: 350px;
                padding: 40px 25px;
                margin-bottom: 40px;
                border-radius: 15px;
             }
 
             @include mobileP {
+               min-height: 320px;
                padding: 33px 25px;
             }
 
@@ -167,6 +171,41 @@
                            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
                         }
                      }
+                  }
+               }
+            }
+
+            // submitted
+            .submitted {
+               position: absolute;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+               text-align: center;
+               width: auto;
+
+               @include mobileL {
+                  width: 74%;
+               }
+
+               img {
+                  position: relative;
+                  top: -5px;
+
+                  @include tablet {
+                     top: -10px;
+                  }
+
+                  @include mobileL {
+                     top: 0;
+                  }
+               }
+
+               p {
+                  margin-top: 12px;
+
+                  @include tablet {
+                     margin-top: 6px;
                   }
                }
             }
