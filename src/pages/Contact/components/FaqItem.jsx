@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "./styles/FaqItem.scss"
 
-const FaqItem = ({ item, i }) => {
+const FaqItem = ({ title, content, i }) => {
    const [selected, setSelected] = useState(null)
 
    const toggle = i => {
@@ -19,8 +19,8 @@ const FaqItem = ({ item, i }) => {
             <span></span>
          </div>
          <div className="faq-item-content">
-            <h3 className='h3-size'>{item.title}</h3>
-            <p className={`paragraph content ${selected === i && 'show'}`}>{item.content}</p>
+            <h3 className='h3-size'>{title}</h3>
+            <p className={`paragraph content ${selected === i && 'show'}`}>{content}</p>
          </div>
       </div>
    )

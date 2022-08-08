@@ -109,7 +109,7 @@ const Contact = () => {
 
                <div className="faq-items">
                   {Faq.map((item, i) => (
-                     <FaqItem key={i} item={item} i={i} />
+                     <FaqItem key={i} {...item} i={i} />
                   ))}
 
                </div>
