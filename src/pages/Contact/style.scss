@@ -2,7 +2,6 @@
 
 .contact {
 
-
    .container {
       max-width: 838px;
 
@@ -218,8 +217,16 @@
             }
          }
       }
+
+
+      .questions {
+         padding: 100px 24px;
+
+         .faq-title {
+            margin-bottom: 60px;
+            text-align: center;
+         }
+      }
    }
 
-
-   .questions {}
 }

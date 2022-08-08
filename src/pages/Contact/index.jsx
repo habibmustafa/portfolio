@@ -1,8 +1,11 @@
 import React, { useRef } from 'react'
 import "./style.scss"
 import emailjs from "@emailjs/browser"
+import { Faq } from "../../data/Faq"
+import FaqItem from './components/FaqItem'
 
 const Contact = () => {
+   // const [selected, setSelected] = useState(null)
    const form = useRef()
 
    const sendEmail = (e) => {
@@ -15,36 +18,44 @@ const Contact = () => {
          });
    }
 
+   // const toggle = i => {
+   //    if (selected === i) {
+   //       return setSelected(null)
+   //    }
+
+   //    setSelected(i)
+   // }
+
    return (
       <div className='contact'>
          <div className="container">
 
             {/* contact form section */}
             <div className="contact-me">
-               <div className='contact-title'>
+               <div className='contact-title' data-aos="fade-zoom-in" data-aos-delay="100">
                   <h1 className='h1-size'>Contact me</h1>
                   <p className="paragraph">
                      Egestas dui id ornare arcu odio. Ornare lectus sit amet est placerat in egestas erat imperdiet aenean vel elit scelerisque mauris pellentesque.
                   </p>
                </div>
-               <div className="contact-form">
+               <div className="contact-form" data-aos="fade-zoom-in" data-aos-delay="300">
                   <form ref={form} onSubmit={sendEmail}>
                      <div className='contact-form-grid'>
                         <div className="input-wrapper">
                            <label htmlFor="name">Name</label>
-                           <input placeholder='Full Name' type="text" name="name" id="name" required/>
+                           <input placeholder='Full Name' type="text" name="name" id="name" required />
                         </div>
                         <div className="input-wrapper">
                            <label htmlFor="email">Email Address</label>
-                           <input placeholder='contact@you.com' type="email" name="email" id="email" required/>
+                           <input placeholder='contact@you.com' type="email" name="email" id="email" required />
                         </div>
                         <div className="input-wrapper">
                            <label htmlFor="phone">Phone</label>
-                           <input placeholder='(+994) 51 600-2230' type="tel" name="phone" id="phone" required/>
+                           <input placeholder='(+994) 51 600-2230' type="tel" name="phone" id="phone" required />
                         </div>
                         <div className="input-wrapper">
                            <label htmlFor="subject">Subject</label>
-                           <input placeholder='Ex. New Project' type="text" name="subject" id="subject" required/>
+                           <input placeholder='Ex. New Project' type="text" name="subject" id="subject" required />
                         </div>
 
                         <div className="input-wrapper message">
@@ -58,7 +69,7 @@ const Contact = () => {
                   </form>
                </div>
 
-               <div className='contact-social'>
+               <div className='contact-social' data-aos="fade-zoom-in" data-aos-offset="100">
                   <div>
                      <a href='mailto:hebibullahmustafazade@gmail.com' className="email">
                         <img src="https://assets.website-files.com/61129bb2ecedf803564c68ec/6112a4fa0865622bd03376a4_email-icon-personal-x-template.svg" alt="mail" />
@@ -76,8 +87,17 @@ const Contact = () => {
             </div>
 
             {/* contact questions section */}
-            <div className="questions">
+            <div className="questions" data-aos="fade-zoom-in" data-aos-offset="300">
+               <div className="faq-title">
+                  <h2 className="h2-size">Frequently Asked Questions</h2>
+               </div>
 
+               <div className="faq-items">
+                  {Faq.map((item, i) => (
+                     <FaqItem key={i} item={item} i={i}/>
+                  ))}
+
+               </div>
             </div>
 
          </div>

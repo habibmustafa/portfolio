@@ -1,0 +1,111 @@
+@use "../../../../scss/" as *;
+
+.faq-item {
+   @include flex (space-between, flex-start);
+   padding-top: 5px;
+   padding-bottom: 50px;
+   opacity: 1;
+   cursor: pointer;
+
+   &:hover {
+      .icon {
+         background-color: $neutral-800;
+
+         span {
+            background-color: $neutral-100;
+         }
+      }
+   }
+
+
+   &:not(:first-child) {
+      border-top: 1px solid $neutral-400;
+      padding-top: 48px;
+   }
+
+   .icon {
+      @include flex (center, center);
+      min-width: 44px;
+      min-height: 44px;
+      border-radius: 12px;
+      background-color: $neutral-300;
+      color: $neutral-600;
+      font-size: 18px;
+      line-height: 1.777em;
+      font-weight: 500;
+      margin-right: 30px;
+      margin-top: -5px;
+      position: relative;
+      z-index: -1;
+      transition: 0.3s;
+
+      span {
+         position: absolute;
+         width: 18px;
+         height: 2px;
+         background-color: $neutral-600;
+
+         &:last-child {
+            transform: rotate(-90deg);
+            animation: animationClose 0.2s linear;
+         }
+      }
+
+      &.active {
+         span {
+            &:last-child {
+               animation: animationOpen 0.2s linear;
+               transform: rotate(0);
+            }
+         }
+      }
+
+   }
+
+   .faq-item-content {
+
+      p {
+         margin-top: 16px;
+
+         &.content {
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.6s cubic-bezier(0, 1, 0, 1);
+         }
+
+         &.show {
+            height: auto;
+            max-height: 9999px;
+            transition: all 0.6s cubic-bezier(1, 0, 1, 0);
+         }
+      }
+   }
+}
+
+@keyframes animationOpen {
+   0% {
+      transform: rotate(-90deg);
+   }
+
+   80% {
+      transform: rotate(15deg);
+   }
+
+   100% {
+      transform: rotate(0);
+   }
+}
+
+@keyframes animationClose {
+   0% {
+      transform: rotate(0);
+   }
+
+   80% {
+      transform: rotate(-105deg);
+   }
+
+   100% {
+      transform: rotate(-90deg);
+   }
+}
