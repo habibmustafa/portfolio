@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Button from '../../components/Button'
 import ServicesItem from './components/ServicesItem'
 import PortfolioItem from './components/PortfolioItem'
-// import SampleArrow from '../../components/SampleArrow';
+import Me from "../../assets/me.jpg"
 import { MdOutlineArrowBackIos, MdOutlineArrowForwardIos } from 'react-icons/md'
 
 
@@ -49,7 +49,7 @@ const Home = () => {
             <div className='hero'>
                <div className="hero-content" data-aos="fade-zoom-in" data-aos-delay="100">
                   <h3 className='h3-size'>Hey, I’m Habib Mustafa</h3>
-                  <h1 className='h1-size'>I enjoy designing tech websites and digital products</h1>
+                  <h1 className='h1-size'>I enjoy developing tech websites, <br /> <span className='web-developer'>Web Developer</span></h1>
                   <div className='line'>
                      <img src="https://assets.website-files.com/61129bb2ecedf803564c68ec/6112b0068db0b60858060db4_hero-underline-personal-x-template.svg" alt="line" />
                   </div>
@@ -65,7 +65,7 @@ const Home = () => {
                   data-aos="fade-zoom-in"
                   data-aos-delay="300"
                >
-                  <img src="https://assets.website-files.com/61129bb2ecedf803564c68ec/6112af58d6338c4181aaed8c_hero-image-personal-x-template.png" alt="me" />
+                  <img src={Me} alt="me" />
                </div>
             </div>
 

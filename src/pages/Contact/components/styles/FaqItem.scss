@@ -6,7 +6,7 @@
    padding-bottom: 50px;
    opacity: 1;
    cursor: pointer;
-   transition: background-color 0.1s;
+   transition: background-color 30ms;
 
    @include tablet {
       padding-bottom: 43px;
@@ -43,7 +43,6 @@
          }
       }
    }
-
 
    &:not(:first-child) {
       border-top: 1px solid $neutral-400;
