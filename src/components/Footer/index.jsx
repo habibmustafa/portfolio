@@ -13,7 +13,6 @@ const Footer = () => {
                <div className="footer-main">
                   <Logo />
                   <p className='paragraph'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus mattis nunc aliquam tincidunt est non.</p>
-
                   <div className="social-links">
                      <a target='_blank' rel="noreferrer" href="https://www.facebook.com/">
                         <img src="https://assets.website-files.com/61129bb2ecedf803564c68ec/6113faa8cc3d9f214b895d53_footer-social-icon-facebook-personal-x-webflow-template-brix-templates.svg" alt="facebook" />

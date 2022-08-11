@@ -103,20 +103,6 @@ const Home = () => {
                </div>
             </div>
 
-            {/* My-resume section */}
-            {/* <div className="my-resume">
-               <div className="my-resume-header">
-                  <h2 className='title'>Take a look at my resume</h2>
-                  <div className='get-button' data-aos="fade-zoom-in">
-                     <Button to="/about" title="See full resume" />
-                  </div>
-               </div>
-
-               <div className="items">
-
-               </div>
-            </div> */}
-
             {/* Take-portfolio section */}
             <div className="take-portfolio">
                <div className="header" data-aos="fade-zoom-in">

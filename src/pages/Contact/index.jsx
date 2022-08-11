@@ -93,7 +93,6 @@ const Contact = () => {
                      </a>
                   </div>
                </div>
-
             </div>
 
             {/* contact questions section */}
