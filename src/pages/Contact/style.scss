@@ -1,7 +1,6 @@
 @use "../../scss/" as *;
 
 .contact {
-
    .container {
       max-width: 838px;
 
@@ -84,7 +83,7 @@
                }
 
                .input-wrapper {
-                  @include flex (center, flex-start);
+                  @include flex(center, flex-start);
                   flex-direction: column;
                   gap: 17px;
 
@@ -129,8 +128,6 @@
                      &::placeholder {
                         color: $neutral-500;
                      }
-
-
                   }
 
                   textarea {
@@ -257,7 +254,6 @@
          }
       }
 
-
       .questions {
          padding: 100px 0;
 
@@ -276,7 +272,7 @@
             @include tablet {
                margin-bottom: 50px;
             }
-            
+
             @include mobileL {
                margin-bottom: 42px;
             }
@@ -287,5 +283,4 @@
          }
       }
    }
-
 }

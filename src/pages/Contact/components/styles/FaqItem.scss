@@ -1,7 +1,7 @@
 @use "../../../../scss/" as *;
 
 .faq-item {
-   @include flex (space-between, flex-start);
+   @include flex(space-between, flex-start);
    padding-top: 5px;
    padding-bottom: 50px;
    opacity: 1;
@@ -15,7 +15,7 @@
       padding-bottom: 38px;
 
       &:active {
-         background-color: #B2B4C450; // $neutral-500
+         background-color: #b2b4c450; // $neutral-500
       }
    }
 
@@ -57,7 +57,7 @@
    }
 
    .icon {
-      @include flex (center, center);
+      @include flex(center, center);
       min-width: 44px;
       min-height: 44px;
       border-radius: 12px;
@@ -110,7 +110,6 @@
    }
 
    .faq-item-content {
-
       p {
          margin-top: 16px;
 

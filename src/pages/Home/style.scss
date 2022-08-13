@@ -171,7 +171,6 @@
          grid-gap: 15px;
          margin-bottom: 15px;
          padding: 25px 0;
-
       }
    }
 
@@ -195,7 +194,7 @@
    @include mobileL {
       padding: 60px 0 60px;
    }
-   
+
    @include mobileP {
       padding: 50px 0 50px;
    }
@@ -310,7 +309,7 @@
       }
 
       .arrows {
-         @include flex (center, center);
+         @include flex(center, center);
          gap: 25px;
 
          .arrow {
@@ -327,7 +326,7 @@
                min-height: 72px;
                min-width: 72px;
             }
-            
+
             @include mobileP {
                min-height: 66px;
                min-width: 66px;
@@ -341,7 +340,7 @@
 
             &:active {
                transform: scale(0.92);
-               
+
                @include mobileP {
                   transform: scale(0.96);
                }
@@ -361,4 +360,4 @@
 }
 // Take-portfolio end
 
-// 
+//
