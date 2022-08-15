@@ -49,7 +49,7 @@ const Home = () => {
                <div
                   className="hero-content"
                   data-aos="fade-zoom-in"
-                  data-aos-delay="100"
+                  data-aos-delay="50"
                >
                   <h3 className="h3-size">Hey, I’m Habib Mustafa</h3>
                   <h1 className="h1-size">
@@ -73,7 +73,7 @@ const Home = () => {
                <div
                   className="hero-image"
                   data-aos="fade-zoom-in"
-                  data-aos-delay="300"
+                  data-aos-delay="250"
                >
                   <img src={Me} alt="me" />
                </div>

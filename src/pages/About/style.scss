@@ -1,0 +1,35 @@
+@use "../../scss/" as *;
+
+.about {
+   .container {
+      .intro {
+         padding: 100px 0;
+         @include flex(space-between, center);
+         gap: 30px;
+
+         .pic {
+            border-radius: 24px;
+            max-width: 46%;
+
+            img {
+               border-radius: inherit;
+            }
+         }
+
+         .content {
+            max-width: 565px;
+
+            .line {
+               position: relative;
+               top: -17px;
+               z-index: -10;
+            }
+
+            p {
+               margin-top: 5px;
+            }
+
+         }
+      }
+   }
+}
