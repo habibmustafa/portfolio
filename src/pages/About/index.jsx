@@ -93,9 +93,69 @@ const About = () => {
                   />
                </div>
             </div>
-            
-            <div className="my-skills">
 
+            <div className="my-skills">
+               <div className="content" data-aos="fade-zoom-in">
+                  <h2 className="h2-size">My skills & software</h2>
+                  <div className="line">
+                     <img
+                        src="https://assets.website-files.com/61129bb2ecedf803564c68ec/61140e796ab6559a19081f84_skills-underline-personal-x-template.svg"
+                        alt="line"
+                     />
+                  </div>
+                  <p className="paragraph">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                     Lectus mattis nunc aliquam tincidunt est non. Viverra nec
+                     eu.
+                  </p>
+               </div>
+
+               <div className="skills">
+                  <div className="skills-card" data-aos="fade-zoom-in">
+                     <img
+                        src="https://assets.website-files.com/61129bb2ecedf803564c68ec/61140f8059c9332ddb393562_skill-icon-01-personal-x-template.svg"
+                        alt="design"
+                     />
+                     <h3 className="h3-size">Design</h3>
+                     <span className="paragraph">UI/UX Design</span>
+                     <span className="paragraph">Product Design</span>
+                     <span className="paragraph">Web Design</span>
+                     <span className="paragraph">Design Thinking</span>
+                     <span className="paragraph">Branding</span>
+                  </div>
+                  <div
+                     className="skills-card"
+                     data-aos="fade-zoom-in"
+                     data-aos-delay="150"
+                  >
+                     <img
+                        src="https://assets.website-files.com/61129bb2ecedf803564c68ec/61140f802d167b3412c5a3d0_skill-icon-02-personal-x-template.svg"
+                        alt="dev"
+                     />
+                     <h3 className="h3-size">Development</h3>
+                     <span className="paragraph">HTML & CSS</span>
+                     <span className="paragraph">Javascript</span>
+                     <span className="paragraph">React</span>
+                     <span className="paragraph">React Native</span>
+                     <span className="paragraph">No Code</span>
+                  </div>
+                  <div
+                     className="skills-card"
+                     data-aos="fade-zoom-in"
+                     data-aos-delay="300"
+                  >
+                     <img
+                        src="https://assets.website-files.com/61129bb2ecedf803564c68ec/61140f8020e63656704c6b6d_skill-icon-03-personal-x-template.svg"
+                        alt="tools"
+                     />
+                     <h3 className="h3-size">Tools</h3>
+                     <span className="paragraph">Webflow</span>
+                     <span className="paragraph">Figma</span>
+                     <span className="paragraph">Notion</span>
+                     <span className="paragraph">Photoshop</span>
+                     <span className="paragraph">Illustrator</span>
+                  </div>
+               </div>
             </div>
          </div>
       </div>
