@@ -117,11 +117,13 @@ const About = () => {
                         alt="design"
                      />
                      <h3 className="h3-size">Design</h3>
-                     <span className="paragraph">UI/UX Design</span>
-                     <span className="paragraph">Product Design</span>
-                     <span className="paragraph">Web Design</span>
-                     <span className="paragraph">Design Thinking</span>
-                     <span className="paragraph">Branding</span>
+                     <ul>
+                        <li className="paragraph">UI/UX Design</li>
+                        <li className="paragraph">Product Design</li>
+                        <li className="paragraph">Web Design</li>
+                        <li className="paragraph">Design Thinking</li>
+                        <li className="paragraph">Branding</li>
+                     </ul>
                   </div>
                   <div
                      className="skills-card"
@@ -132,12 +134,14 @@ const About = () => {
                         src="https://assets.website-files.com/61129bb2ecedf803564c68ec/61140f802d167b3412c5a3d0_skill-icon-02-personal-x-template.svg"
                         alt="dev"
                      />
-                     <h3 className="h3-size">Development</h3>
-                     <span className="paragraph">HTML & CSS</span>
-                     <span className="paragraph">Javascript</span>
-                     <span className="paragraph">React</span>
-                     <span className="paragraph">React Native</span>
-                     <span className="paragraph">No Code</span>
+                     <ul>
+                        <h3 className="h3-size">Development</h3>
+                        <li className="paragraph">HTML & CSS</li>
+                        <li className="paragraph">Javascript</li>
+                        <li className="paragraph">React</li>
+                        <li className="paragraph">React Native</li>
+                        <li className="paragraph">No Code</li>
+                     </ul>
                   </div>
                   <div
                      className="skills-card"
@@ -149,11 +153,13 @@ const About = () => {
                         alt="tools"
                      />
                      <h3 className="h3-size">Tools</h3>
-                     <span className="paragraph">Webflow</span>
-                     <span className="paragraph">Figma</span>
-                     <span className="paragraph">Notion</span>
-                     <span className="paragraph">Photoshop</span>
-                     <span className="paragraph">Illustrator</span>
+                     <ul>
+                        <li className="paragraph">Webflow</li>
+                        <li className="paragraph">Figma</li>
+                        <li className="paragraph">Notion</li>
+                        <li className="paragraph">Photoshop</li>
+                        <li className="paragraph">Illustrator</li>
+                     </ul>
                   </div>
                </div>
             </div>
