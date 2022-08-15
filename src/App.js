@@ -18,6 +18,7 @@ function App() {
          offset: 250,
          once: true,
          mirror: true,
+         duration: 500
       });
 
       AOS.refresh();
