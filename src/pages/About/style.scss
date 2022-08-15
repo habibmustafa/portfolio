@@ -13,6 +13,10 @@
             flex-direction: column-reverse;
             gap: 48px;
          }
+         @include mobileL {
+            padding: 48px 0 64px;
+            gap: 24px;
+         }
 
          .pic {
             border-radius: 24px;
@@ -23,6 +27,10 @@
             @include tablet {
                max-width: none;
                max-height: 70vh;
+            }
+
+            @include mobileL {
+               border-radius: 12px;
             }
 
             img {
@@ -46,10 +54,19 @@
                @include tablet {
                   top: -14px;
                }
+
+               @include mobileL {
+                  top: -7px;
+                  transform: rotate(3deg);
+               }
             }
 
             p {
                margin-top: 5px;
+
+               @include mobileL {
+                  margin-top: 0;
+               }
             }
          }
       }
@@ -68,10 +85,18 @@
             grid-column-gap: 30px;
          }
 
+         @include mobileL {
+            grid-template-columns: 1fr;
+         }
+
          .content {
             position: sticky;
             top: 24px;
             align-self: flex-start;
+
+            @include tablet {
+               position: static;
+            }
 
             .line {
                position: relative;
@@ -116,6 +141,11 @@
                margin-top: 5px;
             }
 
+            @include mobileL {
+               position: static;
+               border-radius: 12px;
+            }
+
             img {
                border-radius: inherit;
 
@@ -138,11 +168,19 @@
             padding: 80px 0;
          }
 
+         @include mobileL {
+            padding: 64px 0;
+         }
+
          .content {
             max-width: 592px;
             margin: 0 auto 60px;
             padding: 0 24px;
             text-align: center;
+
+            @include mobileL {
+               margin: 0 auto;
+            }
 
             .line {
                position: relative;
@@ -156,10 +194,15 @@
 
             p {
                position: relative;
+               margin-bottom: 20px;
                top: -2px;
 
                @include tablet {
                   top: -15px;
+               }
+
+               @include mobileL {
+                  top: -18px;
                }
             }
          }
@@ -169,13 +212,40 @@
             grid-auto-columns: 1fr;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: auto;
+            margin-top: 0;
+
+            @include mobileL {
+               grid-template-columns: 1fr;
+               margin-top: 32px;
+            }
 
             .skills-card {
                @include flex(center, center);
                flex-direction: column;
 
-               &:not(:last-child) {
+               &:nth-child(even) {
+                  border-left: 1px solid $neutral-400;
                   border-right: 1px solid $neutral-400;
+
+                  @include mobileL {
+                     border-left: none;
+                     border-right: none;
+                     border-top: 1px solid $neutral-400;
+                     border-bottom: 1px solid $neutral-400;
+                     padding: 57px 0 43px;
+                  }
+               }
+
+               &:nth-child(1) {
+                  @include mobileL {
+                     margin-bottom: 43px;
+                  }
+               }
+
+               &:nth-child(3) {
+                  @include mobileL {
+                     margin-top: 57px;
+                  }
                }
 
                img {
