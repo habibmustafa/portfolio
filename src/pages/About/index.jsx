@@ -23,7 +23,7 @@ const About = () => {
                   data-aos-delay="50"
                >
                   <h1 className="h1-size">
-                     I’m Habib Mustafa, a Product and Web Designer
+                     I’m Habib Mustafa, <br /> a Product and Web Designer
                   </h1>
                   <div className="line">
                      <img
