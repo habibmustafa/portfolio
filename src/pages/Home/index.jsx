@@ -11,7 +11,7 @@ import {
    MdOutlineArrowForwardIos,
 } from "react-icons/md";
 import Me from "../../assets/me.jpg";
-import { Services } from "../../data/services";
+import { Services } from "../../data/Services";
 
 const Home = () => {
    const sliderRef = useRef();

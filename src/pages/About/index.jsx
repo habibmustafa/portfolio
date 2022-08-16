@@ -1,5 +1,5 @@
 import React from "react";
-import { Skills } from "../../data/skills";
+import { Skills } from "../../data/Skills";
 import SkillsCard from "./components/SkillsCard";
 import "./style.scss";
 

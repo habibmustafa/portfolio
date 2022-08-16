@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import "./style.scss";
 import emailjs from "@emailjs/browser";
-import { Faq } from "../../data/faq";
+import { Faq } from "../../data/Faq";
 import FaqItem from "./components/FaqItem";
 
 const Contact = () => {
