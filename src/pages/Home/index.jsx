@@ -12,6 +12,7 @@ import {
 } from "react-icons/md";
 import Me from "../../assets/me.jpg";
 import { Services } from "../../data/Services";
+import { Projects } from "../../data/Projects";
 
 const Home = () => {
    const sliderRef = useRef();
@@ -173,11 +174,9 @@ const Home = () => {
                   data-aos-offset="100"
                >
                   <Slider ref={sliderRef} {...settings}>
-                     <PortfolioItem />
-                     <PortfolioItem />
-                     <PortfolioItem />
-                     <PortfolioItem />
-                     <PortfolioItem />
+                     {Projects.map((item, i) => (
+                        <PortfolioItem key={i} {...item} />
+                     ))}
                   </Slider>
                </div>
             </div>
