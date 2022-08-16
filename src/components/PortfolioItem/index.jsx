@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./styles/PortfolioItem.scss";
+import "./style.scss";
 
 const PortfolioItem = () => {
    const [animation, setAnimation] = useState(false);

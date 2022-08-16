@@ -1,4 +1,6 @@
 import React from "react";
+import { Skills } from "../../data/skills";
+import SkillsCard from "./components/SkillsCard";
 import "./style.scss";
 
 const About = () => {
@@ -111,56 +113,9 @@ const About = () => {
                </div>
 
                <div className="skills">
-                  <div className="skills-card" data-aos="fade-zoom-in">
-                     <img
-                        src="https://assets.website-files.com/61129bb2ecedf803564c68ec/61140f8059c9332ddb393562_skill-icon-01-personal-x-template.svg"
-                        alt="design"
-                     />
-                     <h3 className="h3-size">Design</h3>
-                     <ul>
-                        <li className="paragraph">UI/UX Design</li>
-                        <li className="paragraph">Product Design</li>
-                        <li className="paragraph">Web Design</li>
-                        <li className="paragraph">Design Thinking</li>
-                        <li className="paragraph">Branding</li>
-                     </ul>
-                  </div>
-                  <div
-                     className="skills-card"
-                     data-aos="fade-zoom-in"
-                     data-aos-delay="150"
-                  >
-                     <img
-                        src="https://assets.website-files.com/61129bb2ecedf803564c68ec/61140f802d167b3412c5a3d0_skill-icon-02-personal-x-template.svg"
-                        alt="dev"
-                     />
-                     <ul>
-                        <h3 className="h3-size">Development</h3>
-                        <li className="paragraph">HTML & CSS</li>
-                        <li className="paragraph">Javascript</li>
-                        <li className="paragraph">React</li>
-                        <li className="paragraph">React Native</li>
-                        <li className="paragraph">No Code</li>
-                     </ul>
-                  </div>
-                  <div
-                     className="skills-card"
-                     data-aos="fade-zoom-in"
-                     data-aos-delay="300"
-                  >
-                     <img
-                        src="https://assets.website-files.com/61129bb2ecedf803564c68ec/61140f8020e63656704c6b6d_skill-icon-03-personal-x-template.svg"
-                        alt="tools"
-                     />
-                     <h3 className="h3-size">Tools</h3>
-                     <ul>
-                        <li className="paragraph">Webflow</li>
-                        <li className="paragraph">Figma</li>
-                        <li className="paragraph">Notion</li>
-                        <li className="paragraph">Photoshop</li>
-                        <li className="paragraph">Illustrator</li>
-                     </ul>
-                  </div>
+                  <SkillsCard {...Skills.design} />
+                  <SkillsCard {...Skills.development} />
+                  <SkillsCard {...Skills.tools} />
                </div>
             </div>
          </div>

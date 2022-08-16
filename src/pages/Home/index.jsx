@@ -5,13 +5,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Button from "../../components/Button";
 import ServicesItem from "./components/ServicesItem";
-import PortfolioItem from "./components/PortfolioItem";
+import PortfolioItem from "../../components/PortfolioItem";
 import {
    MdOutlineArrowBackIos,
    MdOutlineArrowForwardIos,
 } from "react-icons/md";
 import Me from "../../assets/me.jpg";
-import { Services } from "../../data/Services";
+import { Services } from "../../data/services";
 
 const Home = () => {
    const sliderRef = useRef();

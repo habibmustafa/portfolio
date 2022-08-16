@@ -1,0 +1,48 @@
+@use "../../../../scss/" as *;
+
+.skills-card {
+   @include flex(center, center);
+   flex-direction: column;
+
+   &:nth-child(even) {
+      border-left: 1px solid $neutral-400;
+      border-right: 1px solid $neutral-400;
+
+      @include mobileL {
+         border-left: none;
+         border-right: none;
+         border-top: 1px solid $neutral-400;
+         border-bottom: 1px solid $neutral-400;
+         padding: 50px 0;
+      }
+   }
+
+   &:nth-child(1) {
+      @include mobileL {
+         margin-bottom: 50px;
+      }
+   }
+
+   &:nth-child(3) {
+      @include mobileL {
+         margin-top: 50px;
+      }
+   }
+
+   img {
+      width: 76px;
+      min-height: 76px;
+      margin-bottom: 32px;
+      border-radius: 20px;
+   }
+
+   h3 {
+      margin-bottom: 28px;
+   }
+
+   ul {
+      @include flex(center, center);
+      flex-direction: column;
+      gap: 14px;
+   }
+}
