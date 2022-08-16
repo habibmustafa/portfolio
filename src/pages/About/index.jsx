@@ -113,9 +113,9 @@ const About = () => {
                </div>
 
                <div className="skills">
-                  <SkillsCard {...Skills.design} />
-                  <SkillsCard {...Skills.development} />
-                  <SkillsCard {...Skills.tools} />
+                  {Skills.map((card, i) => (
+                     <SkillsCard key={i} {...card} />
+                  ))}
                </div>
             </div>
          </div>
