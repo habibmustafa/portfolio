@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Portfolio from "../pages/Portfolio";
+import NotFound from "../pages/NotFound";
 
 const ReactRoutes = () => {
    return (
@@ -12,6 +13,7 @@ const ReactRoutes = () => {
          <Route path="/about" element={<About />} />
          <Route path="/contact" element={<Contact />} />
          <Route path="/portfolio" element={<Portfolio />} />
+         <Route path="*" element={<NotFound />} />
          {/* Route */}
       </Routes>
    );

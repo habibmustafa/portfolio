@@ -63,6 +63,13 @@
 
             @include tablet {
                margin-left: 70px;
+               right: 17px;
+            }
+            @include mobileL {
+               right: 15px;
+            }
+            @include mobileP {
+               right: 10px;
             }
 
             &::before {
