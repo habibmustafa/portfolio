@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "../Logo";
 import "./style.scss";
 
@@ -11,6 +11,7 @@ const Header = () => {
       window.innerWidth < 768 ? false : true
    );
    const [handleMenu, sethandleMenu] = useState(false);
+   const location = useLocation();
 
    const handleResize = () => {
       window.innerWidth < 768 ? setMailHide(false) : setMailHide(true);
@@ -31,16 +32,15 @@ const Header = () => {
       };
    }, [menuButton]);
 
+   useEffect(() => {
+      sethandleMenu(false);
+   }, [location]);
+
    return (
-      <div className="header">
+      <div className="header" data-aos="fade-zoom-in">
          <div className="header-wrapper">
-            <div className="container" data-aos="fade-zoom-in">
-               <div
-                  className="header-logo"
-                  onClick={() => {
-                     sethandleMenu(false);
-                  }}
-               >
+            <div className="container">
+               <div className="header-logo">
                   <Logo />
                </div>
                {menuButton || (
@@ -96,44 +96,16 @@ const Header = () => {
             {/*  style={{display: handleMenu ? 'block': 'none'}} */}
             <ul className={`nav-item-overlay ${handleMenu && "active"}`}>
                <li>
-                  <Link
-                     onClick={() => {
-                        sethandleMenu(false);
-                     }}
-                     to="/"
-                  >
-                     Home
-                  </Link>
+                  <Link to="/">Home</Link>
                </li>
                <li>
-                  <Link
-                     onClick={() => {
-                        sethandleMenu(false);
-                     }}
-                     to="/about"
-                  >
-                     About
-                  </Link>
+                  <Link to="/about">About</Link>
                </li>
                <li>
-                  <Link
-                     onClick={() => {
-                        sethandleMenu(false);
-                     }}
-                     to="/portfolio"
-                  >
-                     Portfolio
-                  </Link>
+                  <Link to="/portfolio">Portfolio</Link>
                </li>
                <li>
-                  <Link
-                     onClick={() => {
-                        sethandleMenu(false);
-                     }}
-                     to="/contact"
-                  >
-                     Contact
-                  </Link>
+                  <Link to="/contact">Contact</Link>
                </li>
                {mailHide || (
                   <li className="header-email">
