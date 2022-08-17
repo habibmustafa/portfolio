@@ -1,31 +1,87 @@
 @use "../../scss/" as *;
 
 .portfolio-project {
-
    .intro {
       padding: 100px 0;
 
+      @include tablet {
+         padding: 55px 0 80px;
+      }
+      @include mobileL {
+         padding: 48px 0 64px;
+      }
+      @include mobileP {
+         padding: 40px 0 64px;
+      }
+
       .top-content {
          margin-bottom: 80px;
-         
+
+         @include tablet {
+            margin-bottom: 56px;
+         }
+         @include mobileL {
+            margin-bottom: 48px;
+         }
+         @include mobileP {
+            margin-bottom: 40px;
+         }
+
          .time {
             margin-bottom: 36px;
+
+            @include tablet {
+               margin-bottom: 30px;
+            }
+            @include mobileL {
+               margin-bottom: 25px;
+            }
+            @include mobileP {
+               margin-bottom: 21px;
+            }
          }
 
          h1 {
             margin-bottom: 77px;
+
+            @include tablet {
+               margin-bottom: 64px;
+            }
+            @include mobileL {
+               margin-bottom: 53px;
+            }
+            @include mobileP {
+               margin-bottom: 45px;
+            }
          }
 
          .split {
             @include flex(space-between, flex-start);
+
+            @include mobileL {
+               flex-wrap: wrap;
+               justify-content: flex-start;
+               gap: 30px;
+            }
+
+            @include mobileP {
+               flex-direction: column;
+            }
 
             .split-item {
                max-width: 190px;
 
                h2 {
                   margin-bottom: 12px;
+
+                  @include mobileL {
+                     margin-bottom: 10px;
+                  }
+                  @include mobileP {
+                     margin-bottom: 6px;
+                  }
                }
-               
+
                a {
                   color: $neutral-800;
                   font-weight: 700;
@@ -42,11 +98,13 @@
 
       .image {
          border-radius: 32px;
+         overflow: hidden;
 
          img {
             width: 100%;
-            height: 100%;
+            max-height: 576px;
             border-radius: inherit;
+            // object-fit: cover;
          }
       }
    }
@@ -55,33 +113,65 @@
       max-width: 1075px;
       padding: 150px 0;
       margin: 0 auto;
-      @include flex (center, flex-start);
+      @include flex(center, flex-start);
       border-bottom: 1px solid $neutral-400;
+
+      @include tablet {
+         padding: 80px 0;
+      }
+      @include mobileL {
+         padding: 64px 0;
+         flex-direction: column;
+      }
+      @include mobileP {
+         padding: 40px 0;
+      }
 
       .title {
          width: 50%;
          position: sticky;
          top: 40px;
+
+         @include mobileL {
+            width: 100%;
+            position: static;
+            margin-bottom: 24px;
+         }
+         @include mobileP {
+            margin-bottom: 16px;
+         }
+
+         h2 {
+            margin-right: 20px;
+         }
       }
 
       .content {
          width: 75%;
 
+         @include tablet {
+            width: 100%;
+         }
+
          p {
             margin-bottom: 26px;
+
+            @include mobileL {
+               margin-bottom: 20px;        
+            }
          }
 
          .image {
             border-radius: 24px;
 
+            @include mobileL {
+               border-radius: 12px;
+            }
+
             img {
                border-radius: inherit;
             }
          }
-
       }
-
    }
-
-   
 }
