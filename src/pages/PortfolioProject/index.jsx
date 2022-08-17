@@ -2,6 +2,7 @@ import React from "react";
 import "./style.scss";
 import { Projects } from "../../data/Projects";
 import { useParams } from "react-router-dom";
+import NotFound from "../NotFound";
 
 const PortfolioProject = () => {
    const { name } = useParams();
@@ -11,11 +12,15 @@ const PortfolioProject = () => {
       item.title === name ? (project = item) : (project = false)
    );
 
-   return (
+   return project ? (
       <div className="portfolio-project">
          <div className="container">
             <div className="intro">
-               <div className="top-content" data-aos="fade-zoom-in" data-aos-delay="50">
+               <div
+                  className="top-content"
+                  data-aos="fade-zoom-in"
+                  data-aos-delay="50"
+               >
                   <div className="time paragraph">-July 2021</div>
                   <h1 className="h1-size">{project.title}</h1>
 
@@ -41,7 +46,11 @@ const PortfolioProject = () => {
                   </div>
                </div>
 
-               <div className="image" data-aos="fade-zoom-in" data-aos-delay="250">
+               <div
+                  className="image"
+                  data-aos="fade-zoom-in"
+                  data-aos-delay="250"
+               >
                   <img src={project.img} alt="project" />
                </div>
             </div>
@@ -74,6 +83,8 @@ const PortfolioProject = () => {
             </div>
          </div>
       </div>
+   ) : (
+      <NotFound />
    );
 };
 
