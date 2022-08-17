@@ -37,9 +37,9 @@ const Header = () => {
    }, [location]);
 
    return (
-      <div className="header" data-aos="fade-zoom-in">
+      <div className="header">
          <div className="header-wrapper">
-            <div className="container">
+            <div className="container" data-aos="fade-zoom-in">
                <div className="header-logo">
                   <Logo />
                </div>
@@ -90,6 +90,8 @@ const Header = () => {
 
          {/* helelik bele qalsin */}
          <div
+            data-aos="fade-zoom-in"
+            data-aos-delay="200"
             className="nav-overlay"
             style={{ display: menuButton ? "block" : "none" }}
          >
