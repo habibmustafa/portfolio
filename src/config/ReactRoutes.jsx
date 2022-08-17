@@ -6,6 +6,7 @@ import Contact from "../pages/Contact";
 import Portfolio from "../pages/Portfolio";
 import NotFound from "../pages/NotFound";
 import PortfolioProject from "../pages/PortfolioProject";
+import Protected from "../pages/Protected";
 
 const ReactRoutes = () => {
    return (
@@ -15,6 +16,7 @@ const ReactRoutes = () => {
          <Route path="/contact" element={<Contact />} />
          <Route path="/portfolio" element={<Portfolio />} />
          <Route path="/portfolio-project/:name" element={<PortfolioProject />} />
+         <Route path="/401" element={<Protected />} />
          <Route path="*" element={<NotFound />} />
          {/* Route */}
       </Routes>

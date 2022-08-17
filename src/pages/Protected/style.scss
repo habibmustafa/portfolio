@@ -1,0 +1,120 @@
+@use "../../scss/" as *;
+
+.protected {
+   padding: 60px 0;
+   min-height: 800px;
+   @include flex(center, center);
+   background-color: $neutral-200;
+
+   @include tablet {
+      min-height: 750px;
+   }
+   @include mobileL {
+      min-height: 600px;
+   }
+   @include mobileP {
+      min-height: 650px;
+   }
+
+   .content {
+      padding: 72px 50px;
+      border-radius: 24px;
+      background-color: $neutral-100;
+      width: 100%;
+      max-width: 580px;
+      border: 1px solid $neutral-300;
+
+      @include mobileL {
+         padding: 72px 32px;
+      }
+      @include mobileP {
+         padding: 56px 20px;
+      }
+
+      .auth {
+         @include flex(unset, center);
+         flex-direction: column;
+
+         h2 {
+            // margin-bottom: 14px;
+            position: relative;
+            z-index: 1;
+         }
+
+         .line {
+            margin-top: -10px;
+
+            @include mobileL {
+               margin-top: -7px;
+            }
+            @include mobileP {
+               margin-top: -6px;
+            }
+         }
+
+         p {
+            text-align: center;
+            margin-bottom: 40px;
+         }
+
+         label {
+            width: 100%;
+            
+            input {
+               height: auto;
+               width: 100%;
+               min-height: 70px;
+               margin-bottom: 20px;
+               padding: 25px 27px;
+               border-radius: 500px;
+               border: 1px solid $neutral-400;
+               transition: all 0.3s ease;
+               color: $neutral-700;
+               font-size: 18px;
+               line-height: 1em;
+
+               @include mobileL {
+                  min-height: 60px;
+                  padding: 20px 27px;
+               }
+
+               @include mobileP {
+                  padding: 18px 24px;
+               }
+
+               &:hover {
+                  border-color: $neutral-600;
+               }
+
+               &:focus {
+                  border-color: $neutral-800;
+               }
+
+               &::placeholder {
+                  color: $neutral-600;
+               }
+            }
+
+            .button {
+               padding: 30px 60px;
+               cursor: pointer;
+               border: none;
+               background-color: $neutral-800;
+               color: $neutral-100;
+               margin-bottom: 0;
+
+               @include mobileL {
+                  padding: 23px 42px;
+                  width: 100%;
+               }
+
+               &:hover {
+                  background-color: $neutral-100;
+                  color: $neutral-800;
+                  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+               }
+            }
+         }
+      }
+   }
+}
