@@ -99,6 +99,9 @@ const Footer = () => {
                            <Link to="/404">404 Not Found</Link>
                         </li>
                         <li>
+                           <Link to="/401">Password Protected</Link>
+                        </li>
+                        <li>
                            <Link to="/">
                               <u>
                                  <b>Browse More Temp...</b>
