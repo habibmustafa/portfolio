@@ -44,7 +44,7 @@ const Contact = () => {
                <div
                   className="contact-title"
                   data-aos="fade-zoom-in"
-                  data-aos-delay="100"
+                  data-aos-delay="50"
                >
                   <h1 className="h1-size">Contact me</h1>
                   <p className="paragraph">
@@ -56,7 +56,7 @@ const Contact = () => {
                <div
                   className="contact-form"
                   data-aos="fade-zoom-in"
-                  data-aos-delay="300"
+                  data-aos-delay="250"
                >
                   {!sendMessage ? (
                      <form ref={form} onSubmit={sendEmail}>

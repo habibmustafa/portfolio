@@ -2,6 +2,7 @@ export const Projects = [
    {
       title: "Todo List Mobile App Redesign",
       img: "https://assets.website-files.com/61129bb2ecedf8658b4c6911/6112cd9d5b27385cbcd7218d_portfolio-1-featured-image-personal-x-template.jpg",
+      img2: "https://assets.website-files.com/61129bb2ecedf8658b4c6911/6112cb337c703d17422c1397_rich-text-image-featured-image-personal-x-template.jpg",
       expertise: "Product Design",
       platforms: "iOS and Android",
       deliverables: "UI Screens, UX Flow and Prototype",
@@ -10,8 +11,9 @@ export const Projects = [
       overview: "Egestas dui id ornare arcu odio. Ornare lectus sit amet est placerat in egestas erat imperdiet. Aenean vel elit scelerisque mauris pellentesque pulvinar. Mauris a diam maecenas sed enim ut sem viverra. Posuere mori leo urna molestie at. Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Aliquet bibendu enfacilisis gravida neque convallis a. At urna condimentum mattis pellentesque id nibh tortor id aliquet.",
    },
    {
-      title: "Todo List Mobile App Redesign",
-      img: "https://assets.website-files.com/61129bb2ecedf8658b4c6911/6112cd9d5b27385cbcd7218d_portfolio-1-featured-image-personal-x-template.jpg",
+      title: "Analytics Dashboard Design",
+      img: "https://assets.website-files.com/61129bb2ecedf8658b4c6911/6112cca34f769f7534c0c044_portfolio-2-featured-image-personal-x-template.jpg",
+      img2: "https://assets.website-files.com/61129bb2ecedf8658b4c6911/6112cb337c703d17422c1397_rich-text-image-featured-image-personal-x-template.jpg",
       expertise: "Product Design",
       platforms: "iOS and Android",
       deliverables: "UI Screens, UX Flow and Prototype",
@@ -20,8 +22,9 @@ export const Projects = [
       overview: "Egestas dui id ornare arcu odio. Ornare lectus sit amet est placerat in egestas erat imperdiet. Aenean vel elit scelerisque mauris pellentesque pulvinar. Mauris a diam maecenas sed enim ut sem viverra. Posuere mori leo urna molestie at. Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Aliquet bibendu enfacilisis gravida neque convallis a. At urna condimentum mattis pellentesque id nibh tortor id aliquet.",
    },
    {
-      title: "Todo List Mobile App Redesign",
-      img: "https://assets.website-files.com/61129bb2ecedf8658b4c6911/6112cd9d5b27385cbcd7218d_portfolio-1-featured-image-personal-x-template.jpg",
+      title: "Task Manager Web App Design",
+      img: "https://assets.website-files.com/61129bb2ecedf8658b4c6911/6112cc8b235a8e05a257f734_portfolio-3-featured-image-personal-x-template.jpg",
+      img2: "https://assets.website-files.com/61129bb2ecedf8658b4c6911/6112cb337c703d17422c1397_rich-text-image-featured-image-personal-x-template.jpg",
       expertise: "Product Design",
       platforms: "iOS and Android",
       deliverables: "UI Screens, UX Flow and Prototype",
@@ -30,8 +33,9 @@ export const Projects = [
       overview: "Egestas dui id ornare arcu odio. Ornare lectus sit amet est placerat in egestas erat imperdiet. Aenean vel elit scelerisque mauris pellentesque pulvinar. Mauris a diam maecenas sed enim ut sem viverra. Posuere mori leo urna molestie at. Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Aliquet bibendu enfacilisis gravida neque convallis a. At urna condimentum mattis pellentesque id nibh tortor id aliquet.",
    },
    {
-      title: "Todo List Mobile App Redesign",
-      img: "https://assets.website-files.com/61129bb2ecedf8658b4c6911/6112cd9d5b27385cbcd7218d_portfolio-1-featured-image-personal-x-template.jpg",
+      title: "File Manager Mobile App Design",
+      img: "https://assets.website-files.com/61129bb2ecedf8658b4c6911/612a88c05a032682e98df124_portfolio-4-featured-image-personal-x-template.png",
+      img2: "https://assets.website-files.com/61129bb2ecedf8658b4c6911/6112cb337c703d17422c1397_rich-text-image-featured-image-personal-x-template.jpg",
       expertise: "Product Design",
       platforms: "iOS and Android",
       deliverables: "UI Screens, UX Flow and Prototype",
@@ -39,14 +43,5 @@ export const Projects = [
       exp: "Egestas dui id ornare arcu odio. Ornare lectus sit amet est placerat in egestas erat imperdiet. Aenean vel elit scelerisque mauris..",
       overview: "Egestas dui id ornare arcu odio. Ornare lectus sit amet est placerat in egestas erat imperdiet. Aenean vel elit scelerisque mauris pellentesque pulvinar. Mauris a diam maecenas sed enim ut sem viverra. Posuere mori leo urna molestie at. Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Aliquet bibendu enfacilisis gravida neque convallis a. At urna condimentum mattis pellentesque id nibh tortor id aliquet.",
    },
-   {
-      title: "Todo List Mobile App Redesign",
-      img: "https://assets.website-files.com/61129bb2ecedf8658b4c6911/6112cd9d5b27385cbcd7218d_portfolio-1-featured-image-personal-x-template.jpg",
-      expertise: "Product Design",
-      platforms: "iOS and Android",
-      deliverables: "UI Screens, UX Flow and Prototype",
-      website: "https://gifs-page.netlify.app/",
-      exp: "Egestas dui id ornare arcu odio. Ornare lectus sit amet est placerat in egestas erat imperdiet. Aenean vel elit scelerisque mauris..",
-      overview: "Egestas dui id ornare arcu odio. Ornare lectus sit amet est placerat in egestas erat imperdiet. Aenean vel elit scelerisque mauris pellentesque pulvinar. Mauris a diam maecenas sed enim ut sem viverra. Posuere mori leo urna molestie at. Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Aliquet bibendu enfacilisis gravida neque convallis a. At urna condimentum mattis pellentesque id nibh tortor id aliquet.",
-   }
+   
 ]

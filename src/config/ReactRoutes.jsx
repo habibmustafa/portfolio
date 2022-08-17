@@ -5,6 +5,7 @@ import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Portfolio from "../pages/Portfolio";
 import NotFound from "../pages/NotFound";
+import PortfolioProject from "../pages/PortfolioProject";
 
 const ReactRoutes = () => {
    return (
@@ -13,6 +14,7 @@ const ReactRoutes = () => {
          <Route path="/about" element={<About />} />
          <Route path="/contact" element={<Contact />} />
          <Route path="/portfolio" element={<Portfolio />} />
+         <Route path="/portfolio-project/:name" element={<PortfolioProject />} />
          <Route path="*" element={<NotFound />} />
          {/* Route */}
       </Routes>

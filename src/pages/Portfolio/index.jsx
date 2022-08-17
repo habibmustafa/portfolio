@@ -7,9 +7,9 @@ const Portfolio = () => {
    return (
       <div className="portfolio">
          <div className="container">
-            <h1 className="h1-size" data-aos="fade-zoom-in">Portfolio</h1>
+            <h1 className="h1-size" data-aos="fade-zoom-in" data-aos-delay="50">Portfolio</h1>
 
-            <div className="items" data-aos="fade-zoom-in" data-aos-delay="200">
+            <div className="items" data-aos="fade-zoom-in" data-aos-delay="250">
                {Projects.map((item,i) => (
                   <PortfolioItem key={i} {...item}/>
                ))}

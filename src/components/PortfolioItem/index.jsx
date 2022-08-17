@@ -2,11 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./style.scss";
 
-const PortfolioItem = ({
-   title,
-   img,
-   exp,
-}) => {
+const PortfolioItem = ({ title, img, exp }) => {
    const [animation, setAnimation] = useState(false);
    let navigate = useNavigate();
 
@@ -14,7 +10,7 @@ const PortfolioItem = ({
       <div
          className="portfolio-item"
          onClick={() => {
-            navigate("./portfolio");
+            navigate(`../portfolio-project/${title}`);
          }}
          onMouseEnter={() => {
             setAnimation(true);

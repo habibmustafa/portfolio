@@ -11,21 +11,20 @@ const NotFound = () => {
                   <div
                      className="title-404"
                      data-aos="fade-zoom-in"
-                     data-aos-delay="50"
                   >
                      404
                   </div>
                   <h2
                      className="h2-size"
                      data-aos="fade-zoom-in"
-                     data-aos-delay="150"
+                     data-aos-delay="100"
                   >
                      Page Not Found
                   </h2>
                   <p
                      className="paragraph"
                      data-aos="fade-zoom-in"
-                     data-aos-delay="250"
+                     data-aos-delay="200"
                   >
                      The page you are looking for doesn't exist or has been
                      moved.
@@ -33,7 +32,7 @@ const NotFound = () => {
                   <div
                      className="get-button"
                      data-aos="fade-zoom-in"
-                     data-aos-delay="350"
+                     data-aos-delay="300"
                   >
                      <Button to="/" title="Go Home" />
                   </div>
