@@ -12,6 +12,7 @@ const About = () => {
                   className="pic"
                   data-aos="fade-zoom-in"
                   data-aos-delay="250"
+                  data-aos-offset="150"
                >
                   <img
                      src="https://assets.website-files.com/61129bb2ecedf803564c68ec/6113fef6fd44a261b8498282_hero-about-image-personal-x-template.jpg"

@@ -85,16 +85,17 @@ const Home = () => {
                <div className="content" data-aos="fade-zoom-in">
                   <h2 className="h2-size">My services</h2>
                   <p className="paragraph">
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                     Lectus mattis nunc aliquam tincidunt est non. Viverra nec
-                     eu.
+                     Lower those alarming bounce rates and turn users into
+                     returning customers. With the latest technologies, we bring
+                     you fast, responsive and beautiful skins designed with
+                     perfect pixel design.
                   </p>
                </div>
 
                <div className="items">
                   {/* item components */}
                   {Services.map((item, i) => (
-                     <ServicesItem key={i} {...item} />
+                     <ServicesItem key={i} {...item} i={i} />
                   ))}
                </div>
 
