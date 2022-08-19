@@ -125,10 +125,9 @@ const Home = () => {
                >
                   <h2 className="h2-size">About me</h2>
                   <p className="paragraph">
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                     Lectus mattis nunc aliquam tincidunt est non. Viverra nec
-                     eu, in ridiculus egestas mi. Vulputate tristique porttitor
-                     enim aliquam ullamcorper. Velit dui laoreet in et mus.
+                     I have been actively developing myself as a frontend
+                     developer for 1 year, creating successful websites that are
+                     fast, easy to use and built with best practices.
                   </p>
                   <div className="get-button">
                      <Button to="/about" title="More about me" />
