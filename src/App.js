@@ -4,9 +4,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Header from "./components/Header";
 import "./App.scss";
-import RoutesPage from "./config/ReactRoutes";
 import Footer from "./components/Footer";
 import ScrollToTop from "./config/ScrollToTop";
+import Routing from "./config/Routing";
 
 function App() {
    // AOS animation
@@ -29,7 +29,7 @@ function App() {
          <>
             <ScrollToTop />
             <Header />
-            <RoutesPage />
+            <Routing />
             <Footer />
          </>
       </BrowserRouter>
