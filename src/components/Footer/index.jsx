@@ -56,7 +56,7 @@ const Footer = () => {
                            alt="linkedIn"
                         />
                      </a>
-                     <a target="_blank" rel="noreferrer" href="./">
+                     <a target="_blank" rel="noreferrer" href="https://wa.me/+994516002230">
                         <img
                            src="https://assets.website-files.com/61129bb2ecedf803564c68ec/6113faa8a79ad96887a4f019_footer-social-icon-whatsapp-personal-x-webflow-template-brix-templates.svg"
                            alt="whatsapp"
